@@ -1,0 +1,145 @@
+.container{
+  max-width: 1250px;
+  margin-right: auto;
+}
+
+a{
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+.home{
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/portfoliogimenabugiolach-3b4ec.appspot.com/o/FondosInicio%2F1480371hjhgjhhghj5_Vector_2646.jpg?alt=media&token=089a3f59-c827-4105-bee0-06842610afbf);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 100vh;
+}
+
+.home-container{
+  position: relative;
+  height: 100%;
+  align-items: center;
+}
+
+.home-titulo{
+  font-size: 2vw;
+}
+
+.home-subtitulo{
+  font-size: 1.5vw;
+  font-weight: 300;
+  margin-bottom: .75em;
+}
+
+.home-social{
+  position: relative;
+  top: 7em;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.home-social-links{
+  display: inline-flex;
+  column-gap: 1em;
+}
+
+.home-social-links a{
+  text-decoration: none;
+  color: #f3f3f3;
+  font-size: 1.3vw;
+}
+
+.home-data a{
+  text-decoration: none;
+}
+
+.button-icon{
+  font-size: 1.2vw;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%;
+  outline: 2px solid #f3f3f3;
+  transition-property: outline-offset, outline-color, background-color;
+  transition: .2s;
+  transition-duration: .25s;
+}
+
+.icon:hover {
+  outline-offset: 2px;
+}
+
+.icon:hover {
+  transform: translateY(-5px);
+}
+
+.icon-instagram:hover {
+  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  outline-color: #ff0080;
+}
+
+.icon-facebook:hover {
+  background-color: #3b5998;
+  outline-color: #3b5998;
+}
+
+.icon-github:hover {
+  background-color: #4c2882;
+  outline-color: #4c2882;
+}
+
+.icon-twitter:hover {
+  background-color: #00acee;
+  outline-color: #00acee;
+}
+
+.icon-linkedin:hover {
+  background-color: #0072b1;
+  outline-color: #0072b1;
+}
+
+.minha-info{
+  display: flex;
+  column-gap: 1.8em;
+  position: absolute;
+  left: 0;
+  bottom: 1em;
+  background-attachment: fixed;
+}
+
+.card:hover{
+  border: 1px solid #C18DBF;
+}
+
+.home-data{
+  position: relative;
+  top: 12em;
+}
+
+.card{
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+  text-align: center;
+}
+
+.info-titulo,
+.info-subtitulo{
+    font-size: 1vw;
+}
+
+.info-titulo{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.info-icon{
+  font-size: 1.7em;
+  color: #C18DBF;
+}
