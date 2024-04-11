@@ -7,7 +7,4 @@ import { Component } from '@angular/core';
 })
 export class PortfolioComponent {
 
-  mostrarMensagem(): void {
-    alert('My name is Douglas');
-  }
 }
