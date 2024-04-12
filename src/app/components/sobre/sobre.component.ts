@@ -8,5 +8,8 @@ import { faSuitcase, faHeadset, faPaperPlane, faFileLines } from '@fortawesome/f
   styleUrl: './sobre.component.css'
 })
 export class SobreComponent {
-
+  faSuitcase: IconProp = faSuitcase;
+  faHeadset: IconProp = faHeadset;
+  faPaperPlane: IconProp = faPaperPlane;
+  faFileLines: IconProp = faFileLines;
 }
