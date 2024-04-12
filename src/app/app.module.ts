@@ -7,7 +7,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { SobreComponent } from './component/sobre/sobre.component';
+import { SobreComponent } from './components/sobre/sobre.component';
+
 
 
 @NgModule({
@@ -16,7 +17,7 @@ import { SobreComponent } from './component/sobre/sobre.component';
     PortfolioComponent,
     NavbarComponent,
     HomeComponent,
-    SobreComponent
+    SobreComponent,
   ],
   imports: [
     BrowserModule,
