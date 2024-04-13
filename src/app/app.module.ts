@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SobreComponent } from './components/sobre/sobre.component';
+import { FormacaoComponent } from './components/formacao/formacao.component';
 
 
 
@@ -18,6 +19,7 @@ import { SobreComponent } from './components/sobre/sobre.component';
     NavbarComponent,
     HomeComponent,
     SobreComponent,
+    FormacaoComponent,
   ],
   imports: [
     BrowserModule,
