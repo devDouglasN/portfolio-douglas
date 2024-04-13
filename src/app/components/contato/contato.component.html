@@ -1,1 +1,44 @@
-<p>contato works!</p>
+<section id="contato" class="contato section vh-100">
+  <h2 class="titulo-section">Contato</h2>
+  <div class="contato-container container grid">
+    <div class="contato-info">
+      <div class="contato-card">
+        <fa-icon [icon]="mail" class="icon-card"></fa-icon>
+        <h3 class="titulo">Email</h3>
+        <span class="subtitulo">dougnascimento.me&#64;gmail.com</span>
+        <span class="contato-button">Contate-me<fa-icon [icon]="send" class="contato-button-icon"></fa-icon></span>
+      </div>
+      <div class="contato-card">
+        <fa-icon [icon]="wpp" class="icon-card"></fa-icon>
+        <h3 class="titulo">WhatsApp</h3>
+        <span class="subtitulo">11 983....</span>
+        <span class="contato-button">Contate-me<fa-icon [icon]="send" class="contato-button-icon"></fa-icon></span>
+      </div>
+    </div>
+
+    <div class="contato-conteudo">
+      <form action="" class="contato-form">
+        <div class="d-flex">
+          <div class="input-container">
+            <input type="text" class="input">
+            <label for="">Nome</label>
+          </div>
+          <div class="input-container">
+            <input type="tel" class="input">
+            <label for="">Telefone</label>
+          </div>
+        </div>
+        <div class="input-container">
+          <input type="email" class="input">
+          <label for="">Email</label>
+        </div>
+        <div class="input-container textarea">
+          <textarea name="" id="" cols="25" rows="5" class="input"></textarea>
+          <label for="">Mensagem</label>
+        </div>
+        <button type="submit" class="button">
+          Enviar<fa-icon [icon]="paper"></fa-icon></button>
+      </form>
+    </div>
+  </div>
+</section>
