@@ -1,0 +1,47 @@
+span{
+  color: #C18DBF;
+  font-weight: bold;
+}
+
+.redes-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.redes-link a {
+  text-decoration: none;
+  font-size: 1.2vw;
+  color: #f3f3f3;
+  margin-left: 1em;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%;
+  outline: 2px solid #f3f3f3;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: .25s;
+}
+
+.icon:hover {
+  outline-offset: 2px;
+}
+
+.icon:hover {
+  transform: translateY(-5px);
+}
+
+.icon-github:hover {
+  background-color: #4c2882;
+  outline-color: #4c2882;
+}
+
+.icon-linkedin:hover {
+  background-color: #0072b1;
+  outline-color: #0072b1;
+}
