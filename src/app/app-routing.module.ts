@@ -16,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: 'sobre',
-    component: SobreComponent
+    component: SobreComponent,
   }
 ];
 

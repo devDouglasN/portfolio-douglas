@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { FormacaoComponent } from './components/formacao/formacao.component';
+import { ContatoComponent } from './components/contato/contato.component';
 
 
 
@@ -20,6 +21,7 @@ import { FormacaoComponent } from './components/formacao/formacao.component';
     HomeComponent,
     SobreComponent,
     FormacaoComponent,
+    ContatoComponent,
   ],
   imports: [
     BrowserModule,
