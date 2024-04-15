@@ -11,6 +11,7 @@ import { SobreComponent } from './components/sobre/sobre.component';
 import { FormacaoComponent } from './components/formacao/formacao.component';
 import { ContatoComponent } from './components/contato/contato.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { FooterComponent } from './components/footer/footer.component';
     SobreComponent,
     FormacaoComponent,
     ContatoComponent,
-    FooterComponent
+    FooterComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
