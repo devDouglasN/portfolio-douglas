@@ -1,0 +1,103 @@
+.skills-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hard-skills{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 2em;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 0.62em;
+  margin-bottom: 3em;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-ss{
+  font-size: 3vw;
+}
+
+.titulo-hs{
+  font-size: 1vw;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.soft-skills {
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 100%;
+}
+
+.titulo-tipo {
+  font-size: 2vw;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  padding: 1.8em;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 90px;
+  height: 80px;
+  border-radius: 1em;
+  background-color: transparent;
+  margin-left: 2em;
+  padding: .5em;
+  text-align: center;
+  border: none;
+}
+
+.card h3{
+  font-size: .7em;
+}
+
+.cards a{
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+.card-ss{
+  width: 230px;
+  height: 130px;
+  border-radius: 1em;
+  background-color: #313131;
+  margin-left: 2em;
+  padding: .5em;
+  text-align: center;
+  box-shadow: 0 10px 20px #00000080;
+
+}
+
+.card-ss:hover{
+  border: 1px solid #D49BB0;
+}
+
+.card-ss h4{
+  font-size: 1.3vw;
+  margin-bottom: 1em;
+}
+
+.icon-hs{
+  font-size: 2vw;
+  color: #f3f3f3;
+  transition: .3s;
+  transform: scale(1);
+}
+
+.icon-hs:hover{
+  color: #D49BB0;
+  transform: scale(2);
+  background-color: #232323;
+}
