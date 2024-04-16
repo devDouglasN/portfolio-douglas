@@ -3,7 +3,6 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -12,19 +11,20 @@ import { FormacaoComponent } from './components/formacao/formacao.component';
 import { ContatoComponent } from './components/contato/contato.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ProjetosComponent } from './components/projetos/projetos.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PortfolioComponent,
     NavbarComponent,
     HomeComponent,
     SobreComponent,
     FormacaoComponent,
     ContatoComponent,
     FooterComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjetosComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +35,7 @@ import { SkillsComponent } from './components/skills/skills.component';
     provideClientHydration()
   ],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA
+  ]
 })
 export class AppModule { }
