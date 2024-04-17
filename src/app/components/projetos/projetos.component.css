@@ -1,0 +1,76 @@
+.projetos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.projetos-cards-container {
+  position: relative;
+  top: 3em;
+  overflow: hidden;
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  box-shadow:  0 10px 20px #00000080;
+  padding-top: 0.62em;
+  background-color: rgba(48, 47, 47, 0.3);
+}
+
+.my_swiper {
+  padding: 1.8em;
+}
+
+.projetos-card {
+  box-shadow:  0 10px 20px #00000080;
+  border-radius: 1em;
+  overflow: hidden;
+  height: 270px;
+  margin-bottom: 2em;
+  list-style: none;
+  list-style-type: none;
+  text-align: center;
+  -webkit-backdrop-filter: blur(1em);
+  backdrop-filter: blur(1em);
+  background-color: #313131;
+  transition: all .3s;
+}
+
+.projetos-card:hover {
+  border: 1px solid #C18DBF;
+  transform: scale(1.1);
+}
+
+.swiper-pagination-bullet {
+  background: #f3f3f3;
+}
+
+.swiper-pagination-bullet-active {
+  background: #C18DBF;
+}
+
+.projetos-header {
+  height: 140px;
+  transition: all 1s;
+  max-width: 100%;
+}
+
+.projetos-header>img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.projetos-conteudo {
+  background-color: #313131;
+  padding: 10px 6px;
+}
+
+#nome{
+  font-size: 1.3vw;
+}
+
+#descricao{
+  font-size: .9vw;
+}
