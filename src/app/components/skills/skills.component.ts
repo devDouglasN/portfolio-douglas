@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { faAngular, faBootstrap, faDocker, faGit, faGithub, faJava } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faCirclePlus, faDatabase, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-skills',
@@ -15,4 +15,6 @@ export class SkillsComponent {
   git =faGit;
   github=faGithub;
   angular=faAngular;
+  faCirclePlus=faCirclePlus;
+ faPenToSquare=faPenToSquare;
 }
