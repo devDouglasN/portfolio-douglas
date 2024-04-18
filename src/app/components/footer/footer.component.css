@@ -1,3 +1,8 @@
+footer{
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 span{
   color: #C18DBF;
   font-weight: bold;
@@ -17,8 +22,8 @@ span{
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,6 +32,11 @@ span{
   transition-property: outline-offset, outline-color, background-color;
   transition-duration: .25s;
 }
+
+.copy p{
+  margin-top: .5em;
+  margin-left: 1em;
+  }
 
 .icon:hover {
   outline-offset: 2px;
