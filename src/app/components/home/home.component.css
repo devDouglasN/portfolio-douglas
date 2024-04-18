@@ -114,10 +114,6 @@ a{
   background-attachment: fixed;
 }
 
-.card:hover{
-  border: 1px solid #C18DBF;
-}
-
 .home-data{
   position: relative;
   top: 12em;
