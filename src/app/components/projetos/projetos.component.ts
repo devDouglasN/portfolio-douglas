@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
 import { SwiperOptions } from 'swiper/types';
 
 
@@ -8,6 +9,8 @@ import { SwiperOptions } from 'swiper/types';
   styleUrl: './projetos.component.css'
 })
 export class ProjetosComponent {
+
+  faCirclePlus=faCirclePlus;
 
   config: SwiperOptions = {
     slidesPerGroup: 5,
