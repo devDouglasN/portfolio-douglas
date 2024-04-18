@@ -1,0 +1,20 @@
+p {
+  display: block;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 7ch;
+  animation: typing 6s steps(7), blink .8s infinite;
+  overflow:hidden;
+  }
+
+  span{
+    color: #C18DBF;
+  }
+
+  @keyframes typing {
+  from { width: 0}
+  }
+
+  @keyframes blink {
+   50% { border-color: transparent}
+  }
