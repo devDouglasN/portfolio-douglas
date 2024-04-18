@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { faCalendarDays, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarDays, faGlobe, faPenToSquare, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-formacao',
@@ -11,4 +11,6 @@ export class FormacaoComponent {
   faGlobe=faGlobe;
   faFacebook=faFacebook;
   faCalendarDays=faCalendarDays;
+  faPenToSquare=faPenToSquare;
+ faTrashCan=faTrashCan;
 }
