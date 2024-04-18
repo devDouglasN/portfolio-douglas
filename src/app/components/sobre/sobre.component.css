@@ -4,15 +4,15 @@ a{
 }
 
 .sobre-container{
-
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3em;
   align-items: center;
 }
 
 .sobre-container img{
-  width: 35em;
-  border-radius: 1.25em;
+  width: 20em;
+  border-radius: 50%;
   justify-self: center;
 }
 
@@ -21,7 +21,7 @@ a{
   margin-bottom: .75em;
 }
 
-.sobre-descripcion{
+.sobre-descricao{
   text-align: justify;
   padding-right: 6em;
   margin-bottom: 1.5em;
