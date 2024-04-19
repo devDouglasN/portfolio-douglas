@@ -4,6 +4,8 @@ a{
 }
 
 .sobre-container{
+  position: relative;
+  top: 3em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3em;
@@ -19,18 +21,22 @@ a{
 .sobre-titulo{
   display: block;
   white-space: nowrap;
-  border-right: 2px solid #C18DBF;
-  width: 19ch;
-  animation: typing 2.2s steps(15), blink .7s infinite;
-  overflow:hidden;
+  border-right: 2px solid #D49BB0;
+  width: 20ch;
+  animation: typing 2.2s steps(15), blink .7s infinite linear;
+  overflow: hidden;
 }
 
  @keyframes typing {
-  from { width: 0}
+   from {
+    width: 0
+  }
   }
 
   @keyframes blink {
-   50% { border-color: transparent}
+    50% {
+      border-color: transparent
+    }
   }
 
 .sobre-descricao{
@@ -55,7 +61,7 @@ a{
 }
 
 .sobre-box:hover{
-  border: 1px solid #C18DBF;
+  border: 1px solid #D49BB0;
 }
 
 .sobre-icon{
@@ -75,7 +81,10 @@ a{
 .buttons-sobre{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  top: 2em;
 }
 
 .buttons-sobre a{
