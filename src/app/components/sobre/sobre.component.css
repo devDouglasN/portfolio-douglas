@@ -17,9 +17,21 @@ a{
 }
 
 .sobre-titulo{
-  font-size: 1.5vw;
-  margin-bottom: .75em;
+  display: block;
+  white-space: nowrap;
+  border-right: 2px solid #C18DBF;
+  width: 19ch;
+  animation: typing 2.2s steps(15), blink .7s infinite;
+  overflow:hidden;
 }
+
+ @keyframes typing {
+  from { width: 0}
+  }
+
+  @keyframes blink {
+   50% { border-color: transparent}
+  }
 
 .sobre-descricao{
   text-align: justify;
