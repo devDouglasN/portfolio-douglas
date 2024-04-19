@@ -45,6 +45,24 @@ html{
   transition: .2s;
 }
 
+.button-plus{
+  background-color: transparent;
+  border: none;
+  color: #f3f3f3;
+  font-size: 1.5em;
+  position: relative;
+  left: .8em;
+}
+
+.button-edit{
+  background-color: transparent;
+  border: none;
+  color: #f3f3f3;
+  font-size: 1.5em;
+  position: relative;
+  left: 1.2em;
+}
+
 .button:hover::after{
   transform: scale(1);
   background-color: #5A4F73;
@@ -52,7 +70,7 @@ html{
 
 /*Section*/
 .section{
-  padding: 3.5em 0 2em;
+  padding: 4em 0 2em;
 }
 
 .titulo-section{
