@@ -1,6 +1,6 @@
 <section id="projetos" class="projetos section vh-100">
   <div class="d-flex justify-content-center">
-    <h2 class="titulo-section">Meus projetos</h2>
+    <h2 class="h2 titulo-section">Meus projetos</h2>
     <button class="button-plus"><fa-icon [icon]="faCirclePlus"></fa-icon></button>
   </div>
   <div class="projetos-cards-container">
@@ -8,6 +8,10 @@
         style="--swiper-navigation-color: #D9A0BB;--swiper-pagination-color: #D9A0BB">
         <swiper-slide class="swiper_slide">
             <div class="projetos-card">
+              <div class="crud">
+                <button><fa-icon [icon]="faTrashCan"></fa-icon></button>
+                <button><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+              </div>
                 <div class="projetos-header">
                     <img src="./assets" alt="Imagem dos projetos">
                 </div>
