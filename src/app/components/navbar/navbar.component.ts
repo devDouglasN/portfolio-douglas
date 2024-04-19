@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faUser } from '@fortawesome/free-solid-svg-icons';
 import { NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -9,6 +9,7 @@ import { NgbModal} from '@ng-bootstrap/ng-bootstrap';
 })
 export class NavbarComponent {
   faUser=faUser;
+  faBars=faBars;
   closeResult = '';
 
   constructor(private modalService: NgbModal) { }
