@@ -12,7 +12,9 @@ export class FormacaoComponent {
   faFacebook=faFacebook;
   faCalendarDays=faCalendarDays;
   faPenToSquare=faPenToSquare;
- faTrashCan=faTrashCan;
+  faTrashCan=faTrashCan;
+  faCirclePlus=faCirclePlus;
 
- faCirclePlus=faCirclePlus;
+  constructor() {}
+  isLogged = false;
 }
