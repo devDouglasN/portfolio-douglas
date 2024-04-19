@@ -1,6 +1,5 @@
 footer{
   padding-top: 1em;
-  padding-bottom: 1em;
 }
 
 span{
@@ -16,7 +15,7 @@ span{
 
 .redes-link a {
   text-decoration: none;
-  font-size: 1.2vw;
+  font-size: .9em;
   color: #f3f3f3;
   margin-left: 1em;
 }
