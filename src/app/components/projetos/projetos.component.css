@@ -13,7 +13,7 @@
   width: 100%;
   padding-left: 2%;
   padding-right: 2%;
-  box-shadow:  0 10px 20px #00000080;
+  box-shadow: 0 10px 20px #00000080;
   padding-top: 0.62em;
   background-color: rgba(48, 47, 47, 0.3);
 }
@@ -23,7 +23,7 @@
 }
 
 .projetos-card {
-  box-shadow:  0 10px 20px #00000080;
+  box-shadow: 0 10px 20px #00000080;
   border-radius: 1em;
   overflow: hidden;
   height: 270px;
@@ -38,7 +38,7 @@
 }
 
 .projetos-card:hover {
-  border: 1px solid #C18DBF;
+  border: 1px solid #D49BB0;
   transform: scale(1.1);
 }
 
@@ -47,7 +47,7 @@
 }
 
 .swiper-pagination-bullet-active {
-  background: #C18DBF;
+  background: #D49BB0;
 }
 
 .projetos-header {
