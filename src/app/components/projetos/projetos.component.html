@@ -6,8 +6,9 @@
   <div class="projetos-cards-container">
     <swiper init="false" class="project_cards my-swiper my_swiper"
         style="--swiper-navigation-color: #D9A0BB;--swiper-pagination-color: #D9A0BB">
-        <swiper-slide class="swiper_slide">
-            <div class="projetos-card">
+
+        <ng-template swiperSlide class="swiper_slide swiper-slide">
+            <div class="projetos-card" id="projeto-header">
               <div class="crud">
                 <button><fa-icon [icon]="faTrashCan"></fa-icon></button>
                 <button><fa-icon [icon]="faPenToSquare"></fa-icon></button>
@@ -17,24 +18,47 @@
                 </div>
                 <div class="projetos-conteudo">
                     <h3 class="nome">CypherCard</h3>
-                    <p class="descricao">Projeto usando microsserviços, simula uma avaliação de crédito e a emissão de cartões baseada nessa avaliação.</p>
+                    <div class="buttons-vista d-flex">
+                      <button>
+                        <fa-icon class="butt-vista" [icon]="faGithub"></fa-icon>
+                      </button>
+                      <button>
+                        <fa-icon class="butt-vista" [icon]="faDesktop"></fa-icon>
+                      </button>
+                    </div>
                 </div>
             </div>
-        </swiper-slide>
-        <swiper-slide class="swiper_slide">
+          </ng-template>
+
+        <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="projetos-card">
-                <div class="projetos-header">
+              <div class="crud">
+                <button><fa-icon [icon]="faTrashCan"></fa-icon></button>
+                <button><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+              </div>
+                <div class="projetos-header" id="projeto-header">
                     <img src="./assets/" alt="Imagem dos projetos">
                 </div>
                 <div class="projetos-conteudo">
                     <h3 class="nome">User Registration App</h3>
-                    <p class="descricao">User Registration App é um web app para cadastro e seleção de candidatos, otimizando o recrutamento</p>
+                    <div class="buttons-vista d-flex">
+                      <button>
+                        <fa-icon class="butt-vista" [icon]="faGithub"></fa-icon>
+                      </button>
+                      <button>
+                        <fa-icon class="butt-vista" [icon]="faDesktop"></fa-icon>
+                      </button>
+                    </div>
                 </div>
             </div>
-        </swiper-slide>
-        <swiper-slide class="swiper_slide">
+          </ng-template>
+          <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="projetos-card">
-                <div class="projetos-header">
+              <div class="crud">
+                <button><fa-icon [icon]="faTrashCan"></fa-icon></button>
+                <button><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+              </div>
+                <div class="projetos-header" id="projeto-header">
                     <img src="./assets/" alt="Imagem dos projetos">
                 </div>
                 <div class="projetos-conteudo">
@@ -42,29 +66,51 @@
                     <p class="descricao">SafeExchange é uma aplicação web na qual os usuários podem cadastrar pedidos e fazer ofertas para os pedidos de outros usuários.</p>
                 </div>
             </div>
-        </swiper-slide>
-        <swiper-slide class="swiper_slide">
+        </ng-template>
+        <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="projetos-card">
-                <div class="projetos-header">
+              <div class="crud">
+                <button><fa-icon [icon]="faTrashCan"></fa-icon></button>
+                <button><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+              </div>
+                <div class="projetos-header" id="projeto-header">
                     <img src="./assets/" alt="Imagem dos projetos">
                 </div>
                 <div class="projetos-conteudo">
                     <h3 class="nome">ReadVista</h3>
-                    <p class="descricao">ReadVista é um API de gerenciamento de bibliotecas projetada para facilitar o processo de empréstimo e devolução de livros.</p>
+                    <div class="buttons-vista d-flex">
+                      <button>
+                        <fa-icon class="butt-vista" [icon]="faGithub"></fa-icon>
+                      </button>
+                      <button>
+                        <fa-icon class="butt-vista" [icon]="faDesktop"></fa-icon>
+                      </button>
+                    </div>
                 </div>
             </div>
-        </swiper-slide>
-        <swiper-slide class="swiper_slide">
+          </ng-template>
+          <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="projetos-card">
-                <div class="projetos-header">
+              <div class="crud">
+                <button><fa-icon [icon]="faTrashCan"></fa-icon></button>
+                <button><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+              </div>
+                <div class="projetos-header" id="projeto-header">
                     <img src="./assets/" alt="Imagem dos projetos">
                 </div>
                 <div class="projetos-conteudo">
                     <h3 class="nome">Clinic Med</h3>
-                    <p class="descricao">Clinic Med é uma API para uma clínica médica criada para para monitorar o cadastro de médicos, pacientes e agendamento de consultas.</p>
+                    <div class="buttons-vista d-flex">
+                      <button>
+                        <fa-icon class="butt-vista" [icon]="faGithub"></fa-icon>
+                      </button>
+                      <button>
+                        <fa-icon class="butt-vista" [icon]="faDesktop"></fa-icon>
+                      </button>
+                    </div>
                 </div>
             </div>
-        </swiper-slide>
+          </ng-template>
     </swiper>
   </div>
 </section>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { faCirclePlus, faPenToSquare, faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faCirclePlus, faDesktop, faPenToSquare, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { SwiperOptions } from 'swiper/types';
 
 
@@ -12,6 +13,8 @@ export class ProjetosComponent {
   faTrashCan=faTrashCan;
   faCirclePlus=faCirclePlus;
   faPenToSquare=faPenToSquare;
+  faGithub=faGithub;
+  faDesktop=faDesktop;
 
   config: SwiperOptions = {
     slidesPerGroup: 5,
