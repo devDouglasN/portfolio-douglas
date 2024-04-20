@@ -13,7 +13,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjetosComponent } from './components/projetos/projetos.component';
 import { register } from 'swiper/element/bundle';
-import { LogoMarcaComponent } from './components/logo-marca/logo-marca.component';
 
 register();
 
@@ -29,7 +28,6 @@ register();
     FooterComponent,
     SkillsComponent,
     ProjetosComponent,
-    LogoMarcaComponent
   ],
   imports: [
     BrowserModule,
