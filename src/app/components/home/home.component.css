@@ -48,7 +48,7 @@ a{
 .home-social-links a{
   text-decoration: none;
   color: #f3f3f3;
-  font-size: 1.3vw;
+  font-size: 1.1em;
 }
 
 .home-data a{
@@ -107,7 +107,7 @@ a{
 
 .minha-info{
   display: flex;
-  column-gap: 1.8em;
+  column-gap: 1em;
   position: absolute;
   left: 0;
   bottom: 1em;
@@ -127,7 +127,7 @@ a{
 
 .info-titulo,
 .info-subtitulo{
-    font-size: 1vw;
+    font-size: .87em;
 }
 
 .info-titulo{
