@@ -75,6 +75,9 @@ html{
 
 .titulo-section{
   text-align: center;
-  font-size: 3vw;
-  margin-bottom: 1em;
+}
+
+app-footer{
+  position: relative;
+  top: -4em;
 }
