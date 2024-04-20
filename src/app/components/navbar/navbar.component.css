@@ -7,31 +7,15 @@
   color: #C18DBF;
 }
 
-.modal-body,
-.modal-header,
-.modal-footer{
-  background-color: rgba(66, 66, 66, 0.904);
-  backdrop-filter: blur(1px);
-  text-align: center;
-}
-
-.modal-header h4{
-  margin: 0 auto;
-  position: relative;
-  left: 2.5em;
-}
-
-.ingresar{
+.entrar{
   background-color: #C18DBF;
   color: #f3f3f3;
   border: none;
   transition: .2s;
 }
 
-.logo-nav{
-  position: absolute;
-  top: .2em;
-  left: 1em;
+img{
+  width: 5em;
 }
 
 .nav-item {
@@ -67,14 +51,24 @@
   align-items: center;
 }
 
+.nav_container{
+  transition: all .3s;
+}
+
 .nav li a:hover {
   color: #D49BB0;
   transform: translateY(7px);
 }
 
+.nav-toggle-icon{
+  width: auto;
+  height: auto;
+}
+
 fa-icon{
   color: #f3f3f3;
   border: none;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 992px){

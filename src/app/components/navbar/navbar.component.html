@@ -1,5 +1,5 @@
-<nav class="navbar fixed-top navbar-expand-lg" style="background-color: #313131;">
-  <div class="container-fluid">
+<nav class="navbar navbar-expand-lg nav sticky-top shadow" style="background-color: #313131;">
+  <div class="container-fluid nav_container">
     <button class="navbar-toggler shadow-none me-3" type="button" data-bs-toggle="collapse"
       data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
       aria-label="Toggle navigation">
@@ -26,34 +26,21 @@
           <a class="nav-link" href="#contato">Contato</a>
         </li>
       </ul>
-      <!--Modal login-->
-      <ng-template #content let-modal>
-        <div class="modal-header">
-          <h4 class="modal-title" id="modal-basic-title">Iniciar Sessão</h4>
-          <button type="button" class="btn-close btn-close-white" aria-label="Close"
-            (click)="modal.dismiss()"></button>
+      <div class="botones d-flex justify-content-center">
+        <li>
+          <button class="btn button" (click)="login()" *ngIf="!isLogged">
+            <fa-icon [icon]="faUser"></fa-icon>
+          </button>
+        </li>
+        <li>
+          <button class="btn button" *ngIf="isLogged">
+            <fa-icon [icon]="faArrowRightFromBracket"></fa-icon>
+          </button>
+        </li>
         </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Senha</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <button type="submit" class="btn button ingresar">Entrar</button>
-          </form>
-        </div>
-      </ng-template>
-      <button class="btn button login" (click)="open(content)"><fa-icon [icon]="faUser"></fa-icon></button>
     </div>
   </div>
 </nav>
-
-
-
 
 
 
