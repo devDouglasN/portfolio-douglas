@@ -8,6 +8,10 @@ import { faSuitcase, faHeadset, faPaperPlane, faFileLines, faPenToSquare } from 
   styleUrl: './sobre.component.css'
 })
 export class SobreComponent {
+
+  constructor() { }
+  isLogged = false;
+
   faSuitcase: IconProp = faSuitcase;
   faHeadset: IconProp = faHeadset;
   faPaperPlane: IconProp = faPaperPlane;

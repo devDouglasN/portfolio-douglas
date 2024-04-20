@@ -10,6 +10,9 @@ import { SwiperOptions } from 'swiper/types';
   styleUrl: './projetos.component.css'
 })
 export class ProjetosComponent {
+
+  isLogged = false;
+
   faTrashCan=faTrashCan;
   faCirclePlus=faCirclePlus;
   faPenToSquare=faPenToSquare;

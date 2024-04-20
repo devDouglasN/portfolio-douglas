@@ -1,10 +1,10 @@
 <section id="sobre" class="sobre a seção vh-100">
   <div class="d-flex justify-content-center">
     <h2 class="h2 titulo-section">Sobre mim</h2>
-    <button class="button-edit"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+    <button *ngIf="isLogged"class="button-edit"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
   </div>
 
-  <div class="sobre-container container grid">
+  <div class="sobre-container">
     <img src="./assets/eu.jpg" alt="" class="img-fluid sobre-img">
       <div class="sobre-data">
           <span class="sobre-titulo">Olá, sou Douglas...</span>

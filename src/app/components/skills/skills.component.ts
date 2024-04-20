@@ -9,6 +9,8 @@ import { faCirclePlus, faDatabase, faPenToSquare } from '@fortawesome/free-solid
 })
 export class SkillsComponent {
 
+  isLogged = false;
+
   java=faJava;
   docker=faDocker;
   mysql=faDatabase;
