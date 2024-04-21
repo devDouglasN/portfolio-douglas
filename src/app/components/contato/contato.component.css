@@ -42,6 +42,7 @@
 }
 
 .contato-button{
+  text-decoration: none;
   color: #D49BB0;
   font-size: 1em;
   display: flex;
