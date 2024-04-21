@@ -48,6 +48,26 @@
               </button>
           </div>
       </li>
+      <li data-aos="zoom-in-up" class="formacao-card">
+        <div class="formacao-card-img">
+            <img src="./assets/udemy-imagem.png" alt="Imagem da escola de tecnologia">
+        </div>
+        <div class="formacao-card-content">
+            <h3 class="h3" id="nome">Udemy</h3>
+            <div class="d-flex">
+              <p class="text">Desenvolvedor Java - Orientação a Objetos</p>
+            </div>
+            <span class="encerra">11/2022 até 03/2023</span>
+        </div>
+        <div class="buttons">
+            <button *ngIf="isLogged" routerLink="" >
+                <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
+            </button>
+            <button *ngIf="isLogged">
+                <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
+            </button>
+        </div>
+    </li>
     </ul>
 </div>
 </section>
