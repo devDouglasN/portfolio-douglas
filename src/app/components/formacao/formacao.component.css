@@ -2,13 +2,13 @@ ul{
   padding: 0;
 }
 
-.educacao-cards{
+.formacao-cards{
   display: grid;
   grid-template-columns:  repeat(2, 1fr);
   justify-items: center;
 }
 
-.educacao-card {
+.formacao-card {
   position: relative;
   border-radius: 1em;
   overflow: hidden;
@@ -26,24 +26,24 @@ ul{
   transition: all .3s;
 }
 
-.educacao-card:hover {
+.formacao-card:hover {
   border: 1px solid #D9A0BB;
 }
 
-.educacao-card-img {
+.formacao-card-img {
   height: 100px;
 }
-.educacao-card-img>img {
+.formacao-card-img>img {
   object-fit: cover;
   height: 125px;
 }
 
-.educacao-card-content {
+.formacao-card-content {
   padding: .7em;
   width: 100%;
 }
 
-.educacao-card-content h3 {
+.formacao-card-content h3 {
   margin-top: .9em;
   margin-bottom: .9em;
   font-size: .9em;
