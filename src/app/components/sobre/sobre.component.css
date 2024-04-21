@@ -22,6 +22,7 @@ a{
 
 .sobre-img{
   border: 4px solid #f3f3f3;
+  box-shadow: 0 10px 30px #00000080;
 }
 
 .sobre-titulo{
