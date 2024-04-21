@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.hard-skills{
+.hard-skills {
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(4, 2fr);
@@ -26,25 +26,34 @@
   box-shadow: 0 10px 20px #00000080;
 }
 
-.icon-ss{
+.icon-ss {
   font-size: 3vw;
 }
 
-.titulo-hs{
+.titulo-hs {
   font-size: 1vw;
   color: #f9f9f9;
 }
 
-.cards{
+.cards {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 80px;
+  border-radius: 1em;
+  background-color: transparent;
+  padding: .5em;
+  text-align: center;
+  border: none;
+  transition: .2s;
 }
 
 .soft-skills {
   padding-left: 2%;
   padding-right: 2%;
   width: 100%;
+  border-radius: 1em;
+  background-color: transparent;
 }
 
 .titulo-tipo {
@@ -70,7 +79,7 @@
   border: none;
 }
 
-.card h3{
+.card h3 {
   font-size: .7em;
 }
 
@@ -79,7 +88,7 @@
   color: #f3f3f3;
 }
 
-.card-ss{
+.card-ss {
   width: 230px;
   height: 130px;
   border-radius: 1em;
@@ -91,23 +100,23 @@
 
 }
 
-.card-ss:hover{
+.card-ss:hover {
   border: 1px solid #D49BB0;
 }
 
-.card-ss h4{
+.card-ss h4 {
   font-size: 1.3vw;
   margin-bottom: 1em;
 }
 
-.icon-hs{
+.icon-hs {
   font-size: 2vw;
   color: #f3f3f3;
   transition: .3s;
   transform: scale(1);
 }
 
-.icon-hs:hover{
+.icon-hs:hover {
   color: #D49BB0;
   transform: scale(2);
   background-color: #232323;
