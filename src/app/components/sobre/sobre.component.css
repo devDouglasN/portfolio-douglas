@@ -11,12 +11,17 @@ a{
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3em;
   align-items: center;
+  justify-items: center;
 }
 
 .sobre-container img{
   width: 20em;
   border-radius: 50%;
   justify-self: center;
+}
+
+.sobre-img{
+  border: 4px solid #f3f3f3;
 }
 
 .sobre-titulo{
@@ -90,4 +95,8 @@ a{
 
 .buttons-sobre a{
   letter-spacing: 1px;
+}
+
+.anim{
+  text-align: center;
 }
