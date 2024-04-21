@@ -12,6 +12,9 @@
   justify-items: center;
   grid-template-columns: repeat(4, 2fr);
   gap: 2em;
+  width: 33vw;
+  height: 20vw;
+  background-color: #564f4f;
   padding-left: 2%;
   padding-right: 2%;
   padding-top: 0.62em;
@@ -26,6 +29,7 @@
 
 .titulo-hs{
   font-size: 1vw;
+  color: #f9f9f9;
 }
 
 .cards{
