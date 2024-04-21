@@ -16,6 +16,7 @@
   position: relative;
   top: -2em;
   background-color: rgba(255, 255, 255, .15);
+  box-shadow: 0 10px 20px #00000080;
   padding: .4em;
   border-radius: .5em;
   text-align: center;
