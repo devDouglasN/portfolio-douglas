@@ -33,6 +33,7 @@ ul{
 .formacao-card-img {
   height: 100px;
 }
+
 .formacao-card-img>img {
   object-fit: cover;
   height: 125px;
@@ -44,8 +45,6 @@ ul{
 }
 
 .formacao-card-content h3 {
-  margin-top: .9em;
-  margin-bottom: .9em;
   font-size: calc(.6em + .3vw);
 }
 
