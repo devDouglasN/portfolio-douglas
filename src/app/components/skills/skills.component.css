@@ -61,6 +61,7 @@
 
 .cards-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   padding: 1.8em;
   align-items: center;
