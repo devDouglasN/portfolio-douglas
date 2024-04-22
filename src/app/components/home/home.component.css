@@ -23,7 +23,7 @@ a{
 }
 
 .home-titulo{
-  font-size: 2vw;
+  font-size: 1.6vw;
 }
 
 .home-subtitulo{
@@ -37,6 +37,7 @@ a{
   top: 7em;
   left: 0;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
