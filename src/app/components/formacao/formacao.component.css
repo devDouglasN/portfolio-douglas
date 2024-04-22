@@ -46,12 +46,12 @@ ul{
 .formacao-card-content h3 {
   margin-top: .9em;
   margin-bottom: .9em;
-  font-size: .9em;
+  font-size: calc(.6em + .3vw);
 }
 
 .text {
   color: #c2c0c0;
-  font-size: .8vw;
+  font-size: calc(.4em + .3vw);
   letter-spacing: 1px;
   margin-bottom: 0.5em;
 }
@@ -74,8 +74,7 @@ ul{
 }
 
 .encerra{
-  font-size: .8vw;
-  margin-bottom: .5em;
+  font-size: calc(.4em + .3vw);
 }
 
 .doc:hover{
