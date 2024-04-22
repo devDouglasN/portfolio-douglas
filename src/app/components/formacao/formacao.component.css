@@ -75,6 +75,8 @@ ul{
 
 .encerra{
   font-size: calc(.4em + .3vw);
+  position: relative;
+  top: -.5em;
 }
 
 .doc:hover{
