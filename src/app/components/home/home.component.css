@@ -56,6 +56,10 @@ a{
   font-size: 1.2vw;
 }
 
+.mais-info{
+  font-size: calc(.6em + .5vw);
+}
+
 .icon {
   width: 40px;
   height: 40px;
