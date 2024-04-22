@@ -7,13 +7,9 @@ a{
   padding: 2em 3em;
 }
 
-.sobre-container img{
+.sobre-img{
   width: 20em;
   border-radius: 50%;
-  justify-self: center;
-}
-
-.sobre-img{
   border: 4px solid #f3f3f3;
   box-shadow: 0 10px 30px #00000080;
 }
