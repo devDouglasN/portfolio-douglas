@@ -27,11 +27,11 @@
 }
 
 .icon-ss {
-  font-size: 3vw;
+  font-size: calc(.9em + .8vw);
 }
 
 .titulo-hs {
-  font-size: 1vw;
+  font-size: calc(.4em + .3vw);
   color: #f9f9f9;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .icon-hs {
-  font-size: 2vw;
+  font-size: calc(.9em + .8vw);
   color: #f3f3f3;
   transition: .3s;
   transform: scale(1);
