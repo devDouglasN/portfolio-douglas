@@ -82,10 +82,6 @@
   padding: .5em;
 }
 
-.card h3 {
-  font-size: .7em;
-}
-
 .cards a {
   text-decoration: none;
   color: #f3f3f3;
@@ -100,7 +96,6 @@
   padding: .5em;
   text-align: center;
   box-shadow: 0 10px 20px #00000080;
-
 }
 
 .card-ss:hover {
@@ -125,6 +120,6 @@
   background-color: #232323;
 }
 
-.card:hover h3 {
-  visibility: hidden;
+.card:hover {
+  border: 1px solid #D9A0BB;
 }
