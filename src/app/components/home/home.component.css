@@ -9,7 +9,6 @@ a{
 }
 
 .home{
-  background-image: url(https://firebasestorage.googleapis.com/v0/b/portfoliogimenabugiolach-3b4ec.appspot.com/o/FondosInicio%2F1480371hjhgjhhghj5_Vector_2646.jpg?alt=media&token=089a3f59-c827-4105-bee0-06842610afbf);
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
@@ -24,10 +23,11 @@ a{
 
 .home-titulo{
   font-size: 1.6vw;
+  font-size: calc(1em + 1vw);
 }
 
 .home-subtitulo{
-  font-size: 1.5vw;
+  font-size: calc(.6em + .8vw);
   font-weight: 300;
   margin-bottom: .75em;
 }
