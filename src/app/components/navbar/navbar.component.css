@@ -21,6 +21,7 @@ img{
 .nav-item {
   position: relative;
   margin-left: 1.5em;
+  font-size: calc(.6em + .5vw);
   text-align: center;
 }
 
