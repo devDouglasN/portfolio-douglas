@@ -29,37 +29,10 @@ a{
   margin-bottom: 1.5em;
 }
 
-.sobre-info{
- justify-content: center;
-  display: flex;
-  column-gap: 2em;
-  margin-bottom: 3em;
-}
-
-.sobre-box{
-  text-align: center;
-  border-radius: 1em;
-  width: 150px;
-  background-color: #313131;
-  box-shadow: 0 10px 20px #00000080;
-}
-
-.sobre-box:hover{
-  border: 1px solid #D49BB0;
-}
-
 .sobre-icon{
   font-size: 1.5em;
   color: #C18DBF;
   margin-bottom: .75em;
-}
-
-.sobre-cabeçalho{
-  font-size: 1.1vw;
-}
-
-.sobre-subtitulo{
-  font-size: .9vw;
 }
 
 .card{
@@ -81,8 +54,4 @@ a{
 
 .buttons-sobre a{
   letter-spacing: 1px;
-}
-
-.anim{
-  text-align: center;
 }
