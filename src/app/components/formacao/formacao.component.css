@@ -1,13 +1,13 @@
-ul{
+ul {
   padding: 0;
 }
 
-.cards-container{
+.cards-container {
   position: relative;
   top: 2em;
 }
 
-.formacao-cards{
+.formacao-cards {
   display: grid;
   grid-template-columns:  repeat(2, 1fr);
   justify-items: center;
@@ -24,7 +24,7 @@ ul{
   list-style: none;
   list-style-type: none;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgb(9, 8, 8);
   border-right: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   margin: 1em 0;
@@ -66,25 +66,29 @@ ul{
   left: 90%;
 }
 
-.buttons button{
+.buttons button {
   border: none;
   margin-right: .5em;
   background-color: transparent;
   color: #f3f3f3;
 }
 
-.buttons button:hover{
+.buttons button:hover {
   color: #D9A0BB;
 }
 
-.encerra{
+.encerra {
   font-size: calc(.4em + .3vw);
   position: relative;
   top: -.5em;
 }
 
-.doc:hover{
+.doc:hover {
   color: #D9A0BB;
 }
 
-
+@media only screen and (max-width: 400px){
+  .educacion-cards{
+    margin-top: -2em;
+  }
+}
