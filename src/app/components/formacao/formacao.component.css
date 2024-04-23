@@ -2,6 +2,11 @@ ul{
   padding: 0;
 }
 
+.cards-container{
+  position: relative;
+  top: 2em;
+}
+
 .formacao-cards{
   display: grid;
   grid-template-columns:  repeat(2, 1fr);
