@@ -1,38 +1,43 @@
-.container{
+.container {
   max-width: 1250px;
   margin-right: auto;
 }
 
-a{
+a {
   text-decoration: none;
   color: #f3f3f3;
 }
 
-.home{
+#home {
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
   height: 100vh;
 }
 
-.home-container{
+.home-container {
   position: relative;
   height: 100%;
   align-items: center;
 }
 
-.home-titulo{
+.home-titulo {
   font-size: 1.6vw;
   font-size: calc(1em + 1vw);
 }
 
-.home-subtitulo{
+#typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#typewriter p{
   font-size: calc(.6em + .8vw);
   font-weight: 300;
   margin-bottom: .75em;
 }
 
-.home-social{
+.home-social {
   position: relative;
   top: 7em;
   left: 0;
@@ -41,22 +46,22 @@ a{
   align-items: center;
 }
 
-.home-social-links{
+.home-social-links {
   display: inline-flex;
   column-gap: 1em;
 }
 
-.home-social-links a{
+.home-social-links a {
   text-decoration: none;
   color: #f3f3f3;
   font-size: 1.1em;
 }
 
-.button-icon{
+.button-icon {
   font-size: 1.2vw;
 }
 
-.mais-info{
+.mais-info {
   font-size: calc(.6em + .5vw);
 }
 
@@ -106,7 +111,7 @@ a{
   outline-color: #0072b1;
 }
 
-.minha-info{
+.minha-info {
   display: flex;
   column-gap: 1em;
   position: absolute;
@@ -115,12 +120,12 @@ a{
   background-attachment: fixed;
 }
 
-.home-data{
+.home-data {
   position: relative;
   top: 12em;
 }
 
-.botton-container{
+.botton-container {
   position: relative;
   top: 15em;
 }
