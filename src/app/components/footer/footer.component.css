@@ -38,6 +38,7 @@ span{
 }
 
 .copy p{
+  font-size: calc(.5em + .4vw);
   margin-top: .5em;
   margin-left: 1em;
   }
