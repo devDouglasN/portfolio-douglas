@@ -70,9 +70,9 @@
 }
 
 .input{
-  width: 290px;
+  width: 17vw;
   border: 2px solid #f3f3f3;
-  background-color: transparent;
+  background-color: #191919;
   padding: .4em 8em;
   color: #f3f3f3;
   border-radius: .5em;
