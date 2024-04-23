@@ -80,6 +80,17 @@ html{
   position: relative;
 }
 
+.titulo-section:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100px;
+  bottom: -8px;
+  background: #11bebe;
+  background: -webkit-linear-gradient(to right, #A83279, #11bebe);
+  background: linear-gradient(to right, #A83279, #11bebe);
+}
+
 app-footer{
   position: relative;
   top: -4em;
