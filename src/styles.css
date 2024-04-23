@@ -17,6 +17,7 @@ html{
 }
 
 .button{
+  font-size: calc(.6em + .5vw);
   display: inline-flex;
   align-items: center;
   column-gap: .5em;
@@ -45,10 +46,11 @@ html{
 }
 
 .button-plus{
+  font-size: calc(.6em + .5vw);
   background-color: transparent;
   border: none;
   color: #f3f3f3;
-  font-size: 1.5em;
+  font-size: calc(.6em + .5vw);
   position: relative;
   left: .8em;
 }
@@ -57,7 +59,7 @@ html{
   background-color: transparent;
   border: none;
   color: #f3f3f3;
-  font-size: 1.5em;
+  font-size: calc(.6em + .5vw);
   position: relative;
   left: 1.2em;
 }
