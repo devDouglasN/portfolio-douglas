@@ -24,13 +24,14 @@
 }
 
 .icon-card{
-  font-size: 1.8em;
+  font-size: calc(.8em + .7vw);
   margin-bottom: 2em;
+
 }
 
 .titulo,
 .subtitulo{
-  font-size: 1em;
+  font-size: calc(.5em + .5vw);
 }
 
 .titulo{
@@ -45,7 +46,7 @@
 .contato-button{
   text-decoration: none;
   color: #D49BB0;
-  font-size: 1em;
+  font-size: calc(.5em + .5vw);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +55,7 @@
 }
 
 .contato-button-icon{
-  font-size: 1em;
+  font-size: calc(.6em + .5vw);
   transition: .3s;
 }
 
@@ -86,7 +87,7 @@
   left: 25px;
   color: #f3f3f3;
   background-color: #232323;
-  font-size: .8em;
+  font-size: calc(.5em + .4vw);
   padding: 0 .4em;
   pointer-events: none;
   z-index: 500;
