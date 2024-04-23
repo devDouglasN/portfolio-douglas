@@ -60,3 +60,16 @@ span{
   background-color: #0072b1;
   outline-color: #0072b1;
 }
+
+@media only screen and (max-width: 400px) {
+  .social-container {
+    flex-direction: column;
+  }
+  .redes-link{
+    position: relative;
+    top: .7em;
+  }
+  .copy{
+    margin-top: .7em;
+  }
+}
