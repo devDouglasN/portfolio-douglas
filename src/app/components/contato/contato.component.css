@@ -116,3 +116,137 @@ form{
   flex-direction: column;
   align-items: center
 }
+
+@media only screen and (max-width: 400px) {
+  .contacto-container {
+    flex-direction: column;
+  }
+  .input {
+    width: 65vw;
+}
+.contacto-container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5em;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.contacto-info {
+  display: grid;
+  row-gap: 1em;
+  margin-top: 1em;
+}
+
+.contacto-card {
+  position: relative;
+  top: -2em;
+  background-color:#313131;
+  box-shadow: 0 10px 20px #00000080;
+  padding: .4em;
+  border-radius: .5em;
+  text-align: center;
+}
+
+.icono-card {
+  font-size: calc(.8em + .7vw);
+  margin-bottom: 2em;
+}
+
+.titulo,
+.subtitulo {
+  font-size: calc(.5em + .5vw);
+}
+
+.titulo {
+  font-weight: bold;
+}
+
+.subtitulo {
+  display: block;
+  margin-bottom: .75em;
+}
+
+.contacto-button {
+  text-decoration: none;
+  color: #D49BB0;
+  font-size: calc(.5em + .4vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .25em;
+  cursor: pointer;
+}
+
+.contacto-button-icon {
+  font-size: calc(.6em + .5vw);
+  transition: .3s;
+}
+
+.contacto-button:hover .contacto-button-icon {
+  transform: translateX(.25em);
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.input {
+  width: 20vw;
+  border: 2px solid #f3f3f3;
+  background-color: #232323;
+  padding: .4em .8em;
+  color: #f3f3f3;
+  border-radius: .5em;
+  letter-spacing: .5px;
+  transition: .3s;
+  outline: none;
+}
+
+.input-container span {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  color: #f3f3f3;
+  background-color: #232323;
+  font-size: calc(.5em + .4vw);
+  padding: 0 .4em;
+  pointer-events: none;
+  z-index: 500;
+  transform: translateY(-50%);
+}
+
+.input-container span::before,
+.input-container span::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  opacity: 0;
+  transition: .3s;
+  height: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #232323;
+}
+
+button {
+  border: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+@media only screen and (max-width: 400px) {
+  .contacto-container {
+    flex-direction: column;
+  }
+  .input {
+    width: 65vw;
+   }
+ }
+}
