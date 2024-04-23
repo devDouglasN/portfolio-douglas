@@ -71,6 +71,8 @@ html{
 
 .section{
   padding: 20em 0 2em;
+  overflow: hidden;
+  height: 100vh;
 }
 
 .titulo-section{
