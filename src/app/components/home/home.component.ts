@@ -7,15 +7,25 @@ import { faFacebook, faInstagram, faGithub, faTwitter, faLinkedin } from '@forta
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css'],
+  template: `
+  <div id="typewriter">
+    <p>{{ text }}</p>
+  </div>
+`,
+styles: [`
+  #typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+`]
 })
 export class HomeComponent {
+
+
   faWhatsapp: any;
   faUser: any;
   faLinkedin: IconProp = faLinkedin;
-  faTwitter: IconProp = faTwitter;
   faGithub: IconProp = faGithub;
-  faInstagram: IconProp = faInstagram;
-  faFacebook: IconProp = faFacebook;
   faEnvelope: IconProp | undefined;
 }
