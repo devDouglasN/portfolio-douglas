@@ -1,10 +1,15 @@
-footer{
-  padding-top: 1em;
-}
-
 span{
   color: #D49BB0;
   font-weight: bold;
+}
+
+.social-container {
+  display: flex;
+  height: 70px;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .redes-link {
