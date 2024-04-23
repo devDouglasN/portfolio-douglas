@@ -10,6 +10,7 @@
 .contato-info{
   display: grid;
   row-gap: 1em;
+  margin-top: 1em;
 }
 
 .contato-card{
