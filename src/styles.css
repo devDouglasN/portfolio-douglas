@@ -13,6 +13,7 @@ html{
 .bodyPers{
   background: #232323;
   color: #f3f3f3;
+  background-attachment: fixed;
 }
 
 .button{
