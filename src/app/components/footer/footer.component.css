@@ -1,5 +1,7 @@
 footer{
   border-top: 0.5px solid #f3f3f34d;
+  position: relative;
+  top: -3.5em;
 }
 
 span{
