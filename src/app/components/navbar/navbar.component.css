@@ -1,13 +1,19 @@
-.navbar{
+.navbar {
   border-bottom: 0.6px solid #f3f3f3;
 }
 
-.login{
+.nav-logo {
   color: #f3f3f3;
-  margin-left: 1em;
+  font-family: 'DM Sans', sans-serif;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #C18DBF;
+  text-align: center;
+  margin: auto;
 }
 
-.login:hover{
+.login:hover {
   color: #C18DBF;
 }
 
