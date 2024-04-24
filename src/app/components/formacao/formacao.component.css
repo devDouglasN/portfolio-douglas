@@ -32,7 +32,9 @@ ul {
 }
 
 .formacao-card:hover {
-  border: 1px solid #D9A0BB;
+  transition: all 150ms ease;
+  background-color: #430dc0;
+  box-shadow: 0 0 0  1px #a091c4
 }
 
 .formacao-card-img {
