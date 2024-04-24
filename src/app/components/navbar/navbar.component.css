@@ -1,3 +1,7 @@
+.navbar{
+  border-bottom: 0.6px solid #f3f3f3;
+}
+
 .login{
   color: #f3f3f3;
   margin-left: 1em;
@@ -7,14 +11,14 @@
   color: #C18DBF;
 }
 
-.entrar{
+.entrar {
   background-color: #C18DBF;
   color: #f3f3f3;
   border: none;
   transition: .2s;
 }
 
-img{
+img {
   width: 3.8em;
 }
 
@@ -61,18 +65,18 @@ img{
   transform: translateY(7px);
 }
 
-.nav-toggle-icon{
+.nav-toggle-icon {
   width: auto;
   height: auto;
 }
 
-fa-icon{
+fa-icon {
   color: #f3f3f3;
   border: none;
   background-color: transparent;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
   .nav-item:hover::after {
     width: 0%;
   }
