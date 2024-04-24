@@ -80,36 +80,13 @@
   left: 75%;
 }
 
-.crud button {
-  border: none;
-  margin-left: .5em;
-  background-color: transparent;
-  color: #f3f3f3;
-}
-
-.crud button:hover {
-  color: #D49BB0;
-}
-
 .buttons-vista button {
-  border: none;
   margin-left: .5em;
-  background-color: #232323;
-  padding: .2em .4em;
-  border-radius: .3em;
-  color: #f3f3f3;
 }
 
 .buttons-vista {
-  position: relative;
-  top: 1em;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  transition: .2s;
 }
 
-.buttons-vista button:hover{
-  background-color: #f3f3f3;
-  color: #D49BB0;
-}

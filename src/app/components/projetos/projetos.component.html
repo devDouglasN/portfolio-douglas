@@ -1,12 +1,10 @@
 <section id="projetos" class="projetos section">
   <div data-aos="zoom-in-up" class="d-flex justify-content-center">
     <h2 class="h2 titulo-section">Meus projetos</h2>
-    <button *ngIf="isLogged" class="button-plus"><fa-icon [icon]="faCirclePlus"></fa-icon></button>
   </div>
   <div data-aos="zoom-in-up" class="projetos-cards-container">
     <swiper init="false" class="project_cards my-swiper my_swiper"
         style="--swiper-navigation-color: #D9A0BB;--swiper-pagination-color: #D9A0BB">
-
         <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="projetos-card" id="projeto-header">
               <div class="crud">
@@ -18,12 +16,12 @@
                 </div>
                 <div class="projetos-conteudo">
                     <h3 class="nome">CypherCard</h3>
-                    <div class="buttons-vista d-flex">
+                    <div class="buttons-vista">
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faGithub"></fa-icon>
+                        <fa-icon class="button" [icon]="faGithub"></fa-icon>
                       </button>
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faDesktop"></fa-icon>
+                        <fa-icon class="button" [icon]="faDesktop"></fa-icon>
                       </button>
                     </div>
                 </div>
@@ -32,21 +30,17 @@
 
         <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="projetos-card">
-              <div class="crud">
-                <button *ngIf="isLogged"><fa-icon [icon]="faTrashCan"></fa-icon></button>
-                <button *ngIf="isLogged"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
-              </div>
                 <div class="projetos-header" id="projeto-header">
                     <img src="./assets/" alt="Imagem dos projetos">
                 </div>
                 <div class="projetos-conteudo">
                     <h3 class="nome">User Registration App</h3>
-                    <div class="buttons-vista d-flex">
+                    <div class="buttons-vista">
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faGithub"></fa-icon>
+                        <fa-icon class="button" [icon]="faGithub"></fa-icon>
                       </button>
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faDesktop"></fa-icon>
+                        <fa-icon class="button" [icon]="faDesktop"></fa-icon>
                       </button>
                     </div>
                 </div>
@@ -69,21 +63,17 @@
         </ng-template>
         <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="projetos-card">
-              <div class="crud">
-                <button *ngIf="isLogged"><fa-icon [icon]="faTrashCan"></fa-icon></button>
-                <button *ngIf="isLogged"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
-              </div>
                 <div class="projetos-header" id="projeto-header">
                     <img src="./assets/" alt="Imagem dos projetos">
                 </div>
                 <div class="projetos-conteudo">
                     <h3 class="nome">ReadVista</h3>
-                    <div class="buttons-vista d-flex">
+                    <div class="buttons-vista">
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faGithub"></fa-icon>
+                        <fa-icon class="button" [icon]="faGithub"></fa-icon>
                       </button>
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faDesktop"></fa-icon>
+                        <fa-icon class="button" [icon]="faDesktop"></fa-icon>
                       </button>
                     </div>
                 </div>
@@ -91,21 +81,17 @@
           </ng-template>
           <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="projetos-card">
-              <div class="crud">
-                <button *ngIf="isLogged"><fa-icon [icon]="faTrashCan"></fa-icon></button>
-                <button *ngIf="isLogged"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
-              </div>
                 <div class="projetos-header" id="projeto-header">
                     <img src="./assets/" alt="Imagem dos projetos">
                 </div>
                 <div class="projetos-conteudo">
                     <h3 class="nome">Clinic Med</h3>
-                    <div class="buttons-vista d-flex">
+                    <div class="buttons-vista">
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faGithub"></fa-icon>
+                        <fa-icon class="button" [icon]="faGithub"></fa-icon>
                       </button>
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faDesktop"></fa-icon>
+                        <fa-icon class="button" [icon]="faDesktop"></fa-icon>
                       </button>
                     </div>
                 </div>
@@ -114,7 +100,6 @@
     </swiper>
   </div>
 </section>
-
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
