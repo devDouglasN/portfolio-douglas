@@ -62,23 +62,6 @@ ul {
   margin-bottom: 0.5em;
 }
 
-.buttons{
-  position: absolute;
-  display: flex;
-  left: 90%;
-}
-
-.buttons button {
-  border: none;
-  margin-right: .5em;
-  background-color: transparent;
-  color: #f3f3f3;
-}
-
-.buttons button:hover {
-  color: #D9A0BB;
-}
-
 .encerra {
   font-size: calc(.4em + .3vw);
   position: relative;
