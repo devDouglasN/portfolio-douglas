@@ -75,17 +75,6 @@ img {
   background-position: -100% 0;
 }
 
-.nav-toggle-icon {
-  width: auto;
-  height: auto;
-}
-
-fa-icon {
-  color: #f3f3f3;
-  border: none;
-  background-color: transparent;
-}
-
 @media screen and (max-width: 992px) {
   .nav-item:hover::after {
     width: 0%;
