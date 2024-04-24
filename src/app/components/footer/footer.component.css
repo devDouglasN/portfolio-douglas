@@ -9,7 +9,7 @@ span{
 
 .social-container {
   display: flex;
-  height: 70px;
+  height: 60px;
   flex-direction: row;
   text-align: center;
   align-items: center;
