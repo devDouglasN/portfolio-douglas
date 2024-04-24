@@ -84,3 +84,9 @@ app-footer {
     height: max-content;
   }
 }
+
+.contato{
+  padding: 12em 0 1em;
+  overflow: hidden;
+}
+
