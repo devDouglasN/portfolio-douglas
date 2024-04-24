@@ -1,14 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   font-family: 'Cairo', sans-serif;
 }
 
-.bodyPers{
+.bodyPers {
   color: #fffffffa;
   background-color: #000000;
   background-attachment: fixed;
@@ -16,7 +16,7 @@ html{
   font-family: 'Cairo', sans-serif;
 }
 
-.button{
+.button {
   font-size: calc(.6em + .5vw);
   display: inline-flex;
   align-items: center;
@@ -30,7 +30,7 @@ html{
   z-index: 1;
 }
 
-.button::after{
+.button::after {
   position: absolute;
   content: '';
   left: 0;
@@ -45,18 +45,19 @@ html{
   transition: .2s;
 }
 
-.button:hover::after{
+.button:hover::after {
   transform: scale(1);
   background-color: #5A4F73;
 }
 
-.section{
+.section {
   padding: 20em 0 2em;
   overflow: hidden;
   height: 100vh;
+  min-height: 100vh;
 }
 
-.titulo-section{
+.titulo-section {
   text-align: center;
   position: relative;
 }
@@ -72,12 +73,12 @@ html{
   background: linear-gradient(to right, #A83279, #11bebe);
 }
 
-app-footer{
+app-footer {
   position: relative;
   top: -4em;
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
   .section{
     padding: 2em 0 1em;
     height: max-content;
