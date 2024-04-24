@@ -136,3 +136,11 @@ a {
   justify-content: space-around;
   width: 25%;
 }
+
+.gradient-text {
+  display: inline-block;
+  background-image: linear-gradient(-45deg, #A83279, #11bebe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
