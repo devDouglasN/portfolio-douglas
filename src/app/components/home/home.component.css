@@ -129,7 +129,10 @@ a {
   top: 12em;
 }
 
-.botton-container {
+.button-container {
   position: relative;
   top: 15em;
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
 }
