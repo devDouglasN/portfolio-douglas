@@ -31,6 +31,9 @@ img {
   width: 0;
   border-radius: 2px;
   background-color: #D49BB0;
+  background: #11bebe;
+  background: -webkit-linear-gradient(to right, #0a0508, #11bebe);
+  background: linear-gradient(to right, #3632a8, #11bebe);
   transition: 0.4s ease;
 }
 
@@ -54,8 +57,16 @@ img {
 }
 
 .nav li a:hover {
-  color: #D49BB0;
-  transform: translateY(7px);
+  background-image: linear-gradient(to right, #ff7e5f, #feb47b, #fff689, #7cffcb, #4bf3d5);
+  background-size: 200% 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: background-position 0.5s ease;
+}
+
+.nav li a:hover {
+  background-position: -100% 0;
 }
 
 .nav-toggle-icon {
