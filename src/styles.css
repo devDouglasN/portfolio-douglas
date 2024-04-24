@@ -9,7 +9,7 @@ html{
 }
 
 .bodyPers{
-  color: #f3f3f3;
+  color: #fffffffa;
   background-color: #000000;
   background-attachment: fixed;
   background-position: center;
@@ -43,25 +43,6 @@ html{
   z-index: -1;
   border-radius: .25em;
   transition: .2s;
-}
-
-.button-plus{
-  font-size: calc(.6em + .5vw);
-  background-color: transparent;
-  border: none;
-  color: #f3f3f3;
-  font-size: calc(.6em + .5vw);
-  position: relative;
-  left: .8em;
-}
-
-.button-edit{
-  background-color: transparent;
-  border: none;
-  color: #f3f3f3;
-  font-size: calc(.6em + .5vw);
-  position: relative;
-  left: 1.2em;
 }
 
 .button:hover::after{
