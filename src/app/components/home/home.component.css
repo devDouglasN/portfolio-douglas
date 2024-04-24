@@ -32,6 +32,7 @@ a {
 #typewriter {
   overflow: hidden;
   white-space: nowrap;
+  position: absolute;
 }
 
 #typewriter p{
