@@ -82,6 +82,8 @@
 
 .buttons-vista button {
   margin-left: .5em;
+  background: none;
+  border: none;
 }
 
 .buttons-vista {
