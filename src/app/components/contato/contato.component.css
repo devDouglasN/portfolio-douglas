@@ -1,4 +1,4 @@
-.contato-container{
+.contato-container {
   display: flex;
   flex-direction: row;
   column-gap: 5em;
@@ -7,13 +7,13 @@
   margin-top: 2em;
 }
 
-.contato-info{
+.contato-info {
   display: grid;
   row-gap: 1em;
   margin-top: 1em;
 }
 
-.contato-card{
+.contato-card {
   position: relative;
   top: -2em;
   background-color: rgba(255, 255, 255, .15);
@@ -23,27 +23,27 @@
   text-align: center;
 }
 
-.icon-card{
+.icon-card {
   font-size: calc(.8em + .7vw);
   margin-bottom: 2em;
 
 }
 
 .titulo,
-.subtitulo{
+.subtitulo {
   font-size: calc(.5em + .5vw);
 }
 
-.titulo{
+.titulo {
   font-weight: bold;
 }
 
-.subtitulo{
+.subtitulo {
   display: block;
   margin-bottom: .75em;
 }
 
-.contato-button{
+.contato-button {
   text-decoration: none;
   color: #D49BB0;
   font-size: calc(.5em + .5vw);
@@ -54,7 +54,7 @@
   cursor: pointer;
 }
 
-.contato-button-icon{
+.contato-button-icon {
   font-size: calc(.6em + .5vw);
   transition: .3s;
 }
@@ -63,13 +63,13 @@
   transform: translateX(.25em);
 }
 
-.input-container{
+.input-container {
   position: relative;
   margin-top: .1em;
   margin-bottom: 1em;
 }
 
-.input{
+.input {
   width: 17vw;
   border: 2px solid #f3f3f3;
   background-color: #191919;
@@ -95,7 +95,7 @@
 }
 
 .input-container span::before,
-.input-container span::after{
+.input-container span::after {
   content: '';
   position: absolute;
   width: 50%;
@@ -107,11 +107,11 @@
   background: #232323;
 }
 
-button{
+button {
   border: none;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   align-items: center
@@ -124,7 +124,7 @@ form{
   .input {
     width: 65vw;
 }
-.contacto-container {
+.contato-container {
   display: flex;
   flex-direction: row;
   column-gap: 5em;
@@ -133,13 +133,13 @@ form{
   margin-top: 2em;
 }
 
-.contacto-info {
+.contato-info {
   display: grid;
   row-gap: 1em;
   margin-top: 1em;
 }
 
-.contacto-card {
+.contato-card {
   position: relative;
   top: -2em;
   background-color:#313131;
@@ -149,7 +149,7 @@ form{
   text-align: center;
 }
 
-.icono-card {
+.icon-card {
   font-size: calc(.8em + .7vw);
   margin-bottom: 2em;
 }
@@ -168,7 +168,7 @@ form{
   margin-bottom: .75em;
 }
 
-.contacto-button {
+.contato-button {
   text-decoration: none;
   color: #D49BB0;
   font-size: calc(.5em + .4vw);
@@ -179,12 +179,12 @@ form{
   cursor: pointer;
 }
 
-.contacto-button-icon {
+.contato-button-icon {
   font-size: calc(.6em + .5vw);
   transition: .3s;
 }
 
-.contacto-button:hover .contacto-button-icon {
+.contato-button:hover .contato-button-icon {
   transform: translateX(.25em);
 }
 
@@ -249,4 +249,29 @@ form {
     width: 65vw;
    }
  }
+}
+
+.contato{
+  height: 90vh;
+}
+
+.img-contato{
+  position: absolute;
+}
+
+.img-fluid{
+  position: relative;
+  left: -50em;
+  top: -2em;
+  height: 20em;
+  animation: move 3s linear infinite;
+}
+
+@keyframes move{
+  0%, 100%{
+    transform: translateY(10px);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
 }
