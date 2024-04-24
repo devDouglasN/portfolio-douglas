@@ -11,13 +11,6 @@
   color: #C18DBF;
 }
 
-.entrar {
-  background-color: #C18DBF;
-  color: #f3f3f3;
-  border: none;
-  transition: .2s;
-}
-
 img {
   width: 3.8em;
 }
@@ -29,7 +22,7 @@ img {
   text-align: center;
 }
 
-.nav-item::after {
+.nav-item::before {
   content: '';
   position: absolute;
   left: 0;
@@ -41,7 +34,7 @@ img {
   transition: 0.4s ease;
 }
 
-.nav-item:hover::after {
+.nav-item:hover::before {
   width: 100%;
 }
 
