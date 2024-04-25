@@ -76,7 +76,7 @@ img {
 }
 
 @media screen and (max-width: 992px) {
-  .nav-item:hover::after {
+  .nav-item:hover::before  {
     width: 0%;
   }
 }
