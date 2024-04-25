@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faAngular, faBootstrap, faDocker, faGit, faGithub, faJava } from '@fortawesome/free-brands-svg-icons';
+import { faAngular, faAws, faBootstrap, faDocker, faGit, faGithub, faJava } from '@fortawesome/free-brands-svg-icons';
 import { faCirclePlus, faDatabase, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -16,6 +16,7 @@ export class SkillsComponent {
   mysql=faDatabase;
   git =faGit;
   github=faGithub;
+  aws=faAws;
   angular=faAngular;
   faCirclePlus=faCirclePlus;
  faPenToSquare=faPenToSquare;
