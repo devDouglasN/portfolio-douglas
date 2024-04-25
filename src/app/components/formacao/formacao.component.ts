@@ -14,7 +14,4 @@ export class FormacaoComponent {
   faPenToSquare=faPenToSquare;
   faTrashCan=faTrashCan;
   faCirclePlus=faCirclePlus;
-
-  constructor() {}
-  isLogged = false;
 }
