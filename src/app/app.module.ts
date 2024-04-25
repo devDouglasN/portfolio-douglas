@@ -13,10 +13,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjetosComponent } from './components/projetos/projetos.component';
 import { register } from 'swiper/element/bundle';
-import { IniciarSessaoComponent } from './components/iniciar-sessao/iniciar-sessao.component';
 
 register();
-
 
 @NgModule({
   declarations: [
@@ -28,9 +26,7 @@ register();
     ContatoComponent,
     FooterComponent,
     SkillsComponent,
-    ProjetosComponent,
-    IniciarSessaoComponent,
-
+    ProjetosComponent
   ],
   imports: [
     BrowserModule,
