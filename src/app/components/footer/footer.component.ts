@@ -13,6 +13,7 @@ export class FooterComponent {
   faGithub = faGithub;
   faTwitter = faTwitter;
   faLinkedin = faLinkedin;
+
   constructor() { }
 
 }
