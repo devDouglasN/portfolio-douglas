@@ -1,10 +1,10 @@
-footer{
+footer {
   border-top: 0.5px solid #f3f3f34d;
   position: relative;
   top: -3.5em;
 }
 
-span{
+span {
   color: #D49BB0;
   font-weight: bold;
 }
@@ -43,7 +43,7 @@ span{
   transition-duration: .25s;
 }
 
-.copy p{
+.copy p {
   font-size: calc(.5em + .4vw);
   margin-top: .5em;
   margin-left: 1em;
