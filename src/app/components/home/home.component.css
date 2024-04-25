@@ -8,37 +8,9 @@ a {
   color: #f3f3f3;
 }
 
-#home {
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  height: 100vh;
-  position: relative;
-  background: #040404 top right no-repeat;
-  background-size: cover;
-}
-
-.home-container {
-  position: relative;
-  height: 100%;
-  align-items: center;
-}
-
 .home-titulo {
   font-size: 1.6vw;
   font-size: calc(1em + 1vw);
-}
-
-#typewriter {
-  overflow: hidden;
-  white-space: nowrap;
-  position: absolute;
-}
-
-#typewriter p{
-  font-size: calc(.6em + .8vw);
-  font-weight: 300;
-  margin-bottom: .75em;
 }
 
 .home-social {
@@ -82,32 +54,9 @@ a {
   transition-duration: .25s;
 }
 
-.icon:hover {
-  outline-offset: 2px;
-}
-
-.icon:hover {
-  transform: translateY(-5px);
-}
-
-.icon-instagram:hover {
-  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  outline-color: #ff0080;
-}
-
-.icon-facebook:hover {
-  background-color: #3b5998;
-  outline-color: #3b5998;
-}
-
 .icon-github:hover {
   background-color: #4c2882;
   outline-color: #4c2882;
-}
-
-.icon-twitter:hover {
-  background-color: #00acee;
-  outline-color: #00acee;
 }
 
 .icon-linkedin:hover {
@@ -137,10 +86,18 @@ a {
   width: 25%;
 }
 
-.gradient-text {
-  display: inline-block;
-  background-image: linear-gradient(-45deg, #A83279, #11bebe);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+@media only screen and (max-width: 400px){
+  .inicio-titulo{
+    font-size: 4.5vw;
+  }
+
+  #typewriter{
+    font-size: 3.5vw;
+  }
+
+  .botton-container{
+    width: 15em;
+    position: relative;
+    top: -2em;
+   }
 }

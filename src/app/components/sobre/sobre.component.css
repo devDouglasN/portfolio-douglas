@@ -52,6 +52,13 @@ a{
   top: 2em;
 }
 
-.buttons-sobre a{
-  letter-spacing: 1px;
+.button-sobre a{
+  top: 1em;
+}
+
+@media only screen and (max-width: 400px) {
+  .acerca-img {
+    width: 10em;
+    left: -7.5em;
+  }
 }

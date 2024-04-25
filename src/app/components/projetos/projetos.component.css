@@ -92,3 +92,10 @@
   align-items: center;
 }
 
+@media only screen and (max-width: 400px){
+  #nombre {
+    font-size: 3vw;
+    margin-bottom: 2em;
+  }
+}
+
