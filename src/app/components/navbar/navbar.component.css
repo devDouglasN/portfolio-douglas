@@ -13,6 +13,14 @@
   margin: auto;
 }
 
+.login:hover {
+  color: #C18DBF;
+}
+
+img {
+  width: 3.8em;
+}
+
 .nav-item {
   position: relative;
   margin-left: 1.5em;
