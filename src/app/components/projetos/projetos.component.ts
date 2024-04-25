@@ -11,11 +11,7 @@ import { SwiperOptions } from 'swiper/types';
 })
 export class ProjetosComponent {
 
-  isLogged = false;
-
-  faTrashCan=faTrashCan;
   faCirclePlus=faCirclePlus;
-  faPenToSquare=faPenToSquare;
   faGithub=faGithub;
   faDesktop=faDesktop;
 
