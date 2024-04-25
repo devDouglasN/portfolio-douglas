@@ -151,7 +151,8 @@ form {
 
 .icon-card {
   font-size: calc(.8em + .7vw);
-  margin-bottom: 2em;
+  position: relative;
+  top: .5em;
 }
 
 .titulo,
@@ -249,10 +250,6 @@ form {
     width: 65vw;
    }
  }
-}
-
-.contato{
-  height: 90vh;
 }
 
 .img-contato{
