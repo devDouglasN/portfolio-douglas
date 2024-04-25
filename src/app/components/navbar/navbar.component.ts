@@ -8,7 +8,6 @@ import { faArrowRightFromBracket, faBars, faUser } from '@fortawesome/free-solid
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  isLogged = false;
 
   faArrowRightFromBracket=faArrowRightFromBracket;
   faUser=faUser;
@@ -19,6 +18,6 @@ export class NavbarComponent {
 
   ngOnInit(): void { }
   login():void{
-    this.router.navigate(['/inicio-sesion']);
+    this.router.navigate(['/home-sessao']);
   }
 }
