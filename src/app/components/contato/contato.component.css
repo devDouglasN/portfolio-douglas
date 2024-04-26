@@ -124,6 +124,7 @@ form {
   .input {
     width: 65vw;
 }
+
 .contato-container {
   display: flex;
   flex-direction: row;
