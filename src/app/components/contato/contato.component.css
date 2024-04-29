@@ -7,6 +7,7 @@
   margin-top: 2em;
 }
 
+
 .contato-info {
   display: grid;
   row-gap: 1em;
@@ -36,6 +37,10 @@
 
 .titulo {
   font-weight: bold;
+}
+
+.h2 {
+  margin-top: 1em;
 }
 
 .subtitulo {
@@ -259,7 +264,7 @@ form {
 
 .img-fluid{
   position: relative;
-  left: -50em;
+  left: -25em;
   top: -2em;
   height: 20em;
   animation: move 3s linear infinite;
