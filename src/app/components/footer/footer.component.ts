@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faFileLines, faIdBadge } from '@fortawesome/free-solid-svg-icons';
+import { faIdBadge } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -12,7 +12,6 @@ export class FooterComponent {
   faGithub = faGithub;
   faLinkedin = faLinkedin;
   faIdBadge = faIdBadge;
-  faFileLines = faFileLines;
 
   constructor() { }
 

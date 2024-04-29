@@ -1,17 +1,22 @@
 footer {
   border-top: 0.5px solid #f3f3f34d;
-  position: relative;
-  top: -3.5em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 span {
-  color: #D49BB0;
+  color: #009dff;
   font-weight: bold;
+}
+
+.highlight {
+  color: red;
 }
 
 .social-container {
   display: flex;
-  height: 60px;
+  height: 58px;
   flex-direction: row;
   text-align: center;
   align-items: center;
@@ -19,6 +24,7 @@ span {
 }
 
 .redes-link {
+  margin-top: -.5em;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -45,9 +51,10 @@ span {
 
 .copy p {
   font-size: calc(.5em + .4vw);
-  margin-top: .5em;
+  margin-top: -.9em;
   margin-left: 1em;
-  }
+  margin-bottom: 0em;
+}
 
 .icon:hover {
   outline-offset: 2px;
@@ -74,8 +81,5 @@ span {
   .redes-link{
     position: relative;
     top: .7em;
-  }
-  .copy{
-    margin-top: .7em;
   }
 }

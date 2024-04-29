@@ -2,9 +2,18 @@ ul {
   padding: 0;
 }
 
+.move-up {
+  font-weight: bold;
+}
+
+.titulo-section {
+  position: relative;
+  top: -5em;
+}
+
 .cards-container {
   position: relative;
-  top: 2em;
+  top: -7em;
 }
 
 .formacao-cards {
@@ -29,12 +38,6 @@ ul {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   margin: 1em 0;
   transition: all .3s;
-}
-
-.formacao-card:hover {
-  transition: all 150ms ease;
-  background-color: #430dc0;
-  box-shadow: 0 0 0  1px #a091c4
 }
 
 .formacao-card-img {
@@ -68,16 +71,12 @@ ul {
   top: -.5em;
 }
 
-.doc:hover {
-  color: #D9A0BB;
-}
-
 @media only screen and (max-width: 400px){
   .educacion-cards{
     margin-top: -2em;
   }
 }
 
-.content{
+.content {
   position: relative;
 }
