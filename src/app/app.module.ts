@@ -12,10 +12,7 @@ import { ContatoComponent } from './components/contato/contato.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjetosComponent } from './components/projetos/projetos.component';
-import { register } from 'swiper/element/bundle';
-import { ThemeSwitcherComponent } from './components/theme-switcher/theme-switcher.component';
-
-register();
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -27,12 +24,12 @@ register();
     ContatoComponent,
     FooterComponent,
     SkillsComponent,
-    ProjetosComponent,
-    ThemeSwitcherComponent
-  ],
+    ProjetosComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
     FontAwesomeModule
   ],
   providers: [
