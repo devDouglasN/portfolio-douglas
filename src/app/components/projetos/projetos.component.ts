@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faCirclePlus, faDesktop, faPenToSquare, faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { auto } from '@popperjs/core';
 import { SwiperOptions } from 'swiper/types';
 
 
@@ -9,42 +9,48 @@ import { SwiperOptions } from 'swiper/types';
   templateUrl: './projetos.component.html',
   styleUrl: './projetos.component.css'
 })
-export class ProjetosComponent {
+export class ProjetosComponent  {
 
-  faCirclePlus=faCirclePlus;
   faGithub=faGithub;
-  faDesktop=faDesktop;
 
   config: SwiperOptions = {
-    slidesPerGroup: 5,
     initialSlide: 0,
-    spaceBetween: 10,
-    navigation: true,
+    spaceBetween: 25,
+    navigation: false,
     centeredSlides: true,
+
     keyboard: {
-      enabled: true
+    enabled: true
     },
     loop: true,
+    noSwipingClass: 'swiper-slide',
+    slidesPerView: 'auto',
     pagination: {
       clickable: true
     },
-    autoplay: true,
-    speed: 1000,
+    autoplay: {
+      delay: 1,
+      pauseOnMouseEnter: false,
+      disableOnInteraction: false,
+    },
+    speed: 2000,
+    grabCursor: true,
+
     breakpoints: {
       640: {
-        slidesPerView: 2,
+        slidesPerView: auto,
         spaceBetween: 20
       },
       930: {
-        slidesPerView: 3,
+        slidesPerView: auto,
         spaceBetween: 20
       },
       1250: {
-        slidesPerView: 4,
+        slidesPerView: auto,
         spaceBetween: 30
       },
       1300: {
-        slidesPerView: 5,
+        slidesPerView: auto,
         spaceBetween: 30
       }
     }
