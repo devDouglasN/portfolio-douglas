@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
@@ -7,14 +7,14 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent   {
 
   ngAfterViewInit(): void {
     this.typeEffect.nativeElement.innerHTML = '';
     this.typeEffect2.nativeElement.innerHTML = '';
 
-    this.typeWriter(this.typeEffect.nativeElement, 'Olá, me chamo Douglas.', 0, 100).then(() => {
-      this.typeWriter(this.typeEffect2.nativeElement, 'Sou desenvolvedor Backend Java', 0, 100);
+    this.typeWriter(this.typeEffect.nativeElement, 'Olá, me chamo Douglas', 0, 80).then(() => {
+    this.typeWriter(this.typeEffect2.nativeElement, 'Sou desenvolvedor Backend Java', 0, 80);
     });
   }
 
@@ -36,9 +36,6 @@ export class HomeComponent implements AfterViewInit {
     });
   }
 
-  faWhatsapp: any;
-  faUser: any;
   faLinkedin: IconProp = faLinkedin;
   faGithub: IconProp = faGithub;
-  faEnvelope: IconProp | undefined;
 }
