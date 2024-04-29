@@ -9,7 +9,7 @@ import { faAnglesRight, faEnvelope, faPaperPlane } from '@fortawesome/free-solid
 })
 export class ContatoComponent {
 
-  wpp =faWhatsapp ;
+  wpp =faWhatsapp;
   mail=faEnvelope;
   send=faAnglesRight;
   paper=faPaperPlane;
