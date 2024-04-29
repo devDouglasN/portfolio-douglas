@@ -1,6 +1,5 @@
-
-
-import { Component } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import * as AOS from 'aos'
 
 @Component({
@@ -12,8 +11,12 @@ import * as AOS from 'aos'
 export class AppComponent {
   title = 'portfolio-douglas';
 
-  ngOnInit(){
-    AOS.init()
-    window.addEventListener('load', AOS.refresh)
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
+  ngOnInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      AOS.init();
+      window.addEventListener('load', AOS.refresh);
+    }
   }
 }
