@@ -3,6 +3,7 @@
   top: -5em;
   margin-bottom: 5em;
   margin-right: 1em;
+  font-weight: bold;
 }
 
 .skills-container {
@@ -56,24 +57,8 @@
   transition: .2s;
 }
 
-.soft-skills {
-  padding:0 4em;
-  width: 100%;
-  border-radius: 1em;
-  background-color: transparent;
-}
-
 .titulo-tipo {
   font-size: 2vw;
-}
-
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  padding: 1.8em;
-  align-items: center;
-  justify-content: center;
 }
 
 .card {

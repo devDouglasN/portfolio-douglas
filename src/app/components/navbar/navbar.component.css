@@ -2,23 +2,8 @@
   border-bottom: 0.6px solid #f3f3f3;
 }
 
-.nav-logo {
-  color: #f3f3f3;
-  font-family: 'DM Sans', sans-serif;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #C18DBF;
-  text-align: center;
-  margin: auto;
-}
-
-.login:hover {
-  color: #C18DBF;
-}
-
 img {
-  width: 3.8em;
+  width: 3.0em;
 }
 
 .nav-item {
@@ -58,7 +43,7 @@ img {
   align-items: center;
 }
 
-.nav_container{
+.nav_container {
   transition: all .3s;
 }
 
