@@ -1,99 +1,134 @@
 <section id="projetos" class="projetos section">
   <div data-aos="zoom-in-up" class="d-flex justify-content-center">
-    <h2 class="h2 titulo-section">Meus projetos</h2>
+    <h2 class="h2 titulo-section move-up">Meus projetos</h2>
   </div>
-  <div data-aos="zoom-in-up" class="projetos-cards-container">
-    <swiper init="false" class="project_cards my-swiper my_swiper"
-        style="--swiper-navigation-color: #D9A0BB;--swiper-pagination-color: #D9A0BB">
-        <ng-template swiperSlide class="swiper_slide swiper-slide">
-            <div class="projetos-card" id="projeto-header">
-              <div class="crud">
-              </div>
-                <div class="projetos-header">
-                    <img src="./assets" alt="Imagem dos projetos">
-                </div>
-                <div class="projetos-conteudo">
-                    <h3 class="nome">CypherCard</h3>
-                    <div class="buttons-vista">
-                      <button>
-                        <fa-icon class="button" [icon]="faGithub"></fa-icon>
-                      </button>
-                      <button>
-                        <fa-icon class="button" [icon]="faDesktop"></fa-icon>
-                      </button>
-                    </div>
-                </div>
-            </div>
-          </ng-template>
-
-        <ng-template swiperSlide class="swiper_slide swiper-slide">
-            <div class="projetos-card">
-                <div class="projetos-header" id="projeto-header">
-                    <img src="./assets/" alt="Imagem dos projetos">
-                </div>
-                <div class="projetos-conteudo">
-                    <h3 class="nome">User Registration App</h3>
-                    <div class="buttons-vista">
-                      <button>
-                        <fa-icon class="button" [icon]="faGithub"></fa-icon>
-                      </button>
-                      <button>
-                        <fa-icon class="button" [icon]="faDesktop"></fa-icon>
-                      </button>
-                    </div>
-                </div>
-            </div>
-          </ng-template>
-          <ng-template swiperSlide class="swiper_slide swiper-slide">
-            <div class="projetos-card">
-              <div class="crud">
-              </div>
-                <div class="projetos-header" id="projeto-header">
-                    <img src="./assets/" alt="Imagem dos projetos">
-                </div>
-                <div class="projetos-conteudo">
-                    <h3 class="nome">SafeExchange</h3>
-                    <p class="descricao">SafeExchange é uma aplicação web na qual os usuários podem cadastrar pedidos e fazer ofertas para os pedidos de outros usuários.</p>
-                </div>
-            </div>
-        </ng-template>
-        <ng-template swiperSlide class="swiper_slide swiper-slide">
-            <div class="projetos-card">
-                <div class="projetos-header" id="projeto-header">
-                    <img src="./assets/" alt="Imagem dos projetos">
-                </div>
-                <div class="projetos-conteudo">
-                    <h3 class="nome">ReadVista</h3>
-                    <div class="buttons-vista">
-                      <button>
-                        <fa-icon class="button" [icon]="faGithub"></fa-icon>
-                      </button>
-                      <button>
-                        <fa-icon class="button" [icon]="faDesktop"></fa-icon>
-                      </button>
-                    </div>
-                </div>
-            </div>
-          </ng-template>
-          <ng-template swiperSlide class="swiper_slide swiper-slide">
-            <div class="projetos-card">
-                <div class="projetos-header" id="projeto-header">
-                    <img src="./assets/" alt="Imagem dos projetos">
-                </div>
-                <div class="projetos-conteudo">
-                    <h3 class="nome">Clinic Med</h3>
-                    <div class="buttons-vista">
-                      <button>
-                        <fa-icon class="button" [icon]="faGithub"></fa-icon>
-                      </button>
-                      <button>
-                        <fa-icon class="button" [icon]="faDesktop"></fa-icon>
-                      </button>
-                    </div>
-                </div>
-            </div>
-          </ng-template>
-    </swiper>
+  <div data-aos="fade-up-left" class="projetos-cards-container">
+    <swiper-container class="project_cards my-swiper my_swiper swiper-container-free-mode" [config]="config"
+    style="--swiper-navigation-color: #f3f3f3;--swiper-pagination-color: #D9A0BB">
+      <swiper-slide class="swiper_slide" data-aos="fade-down" data-aos-delay="100">
+        <div class="projeto-card">
+        <div class="projeto-header" id="projeto-header">
+          <img src="./assets/cyphercard-image.png" alt="Imagem do projeto">
+      </div>
+        <div class="projeto-conteudo">
+          <p>
+            Simula a avaliação de crédito e emissão de cartões
+            com base na renda do cliente. Utiliza Docker para execução e RabbitMQ
+            para comunicação assíncrona entre os microserviços.
+          </p>
+          <div class="buttons-vista">
+            <a href="https://github.com/devDouglasN/cyphercard" target="_blank">
+            <button>
+              <fa-icon class="button" [icon]="faGithub"></fa-icon>
+            </button>
+          </a>
+          </div>
+        </div>
+      </div>
+      </swiper-slide>
+      <swiper-slide class="swiper_slide swiper-slide" data-aos="fade-down" data-aos-delay="200">
+        <div class="projeto-card">
+        <div class="projeto-header" id="projeto-header">
+          <img src="./assets/readvista-image.png" alt="Imagem do projeto">
+      </div>
+        <div class="projeto-conteudo">
+        <p>
+          ReadVista é um API de gerenciamento de bibliotecas projetada para
+          facilitar o processo de empréstimo e devolução de livros.
+        </p>
+        <div class="buttons-vista">
+          <a href="https://github.com/devDouglasN/readvista-backend" target="_blank">
+          <button>
+            <fa-icon class="button" [icon]="faGithub"></fa-icon>
+          </button>
+        </a>
+        </div>
+        </div>
+      </div>
+      </swiper-slide>
+      <swiper-slide class="swiper_slide swiper-slide" data-aos="fade-down" data-aos-delay="300">
+        <div class="projeto-card">
+        <div class="projeto-header" id="projeto-header">
+          <img src="./assets/userregistrationapp-image.png" alt="Imagem do projeto">
+      </div>
+        <div class="projeto-conteudo">
+          <p>
+            Aplicação web para cadastro, alteração e seleção de candidatos para vagas de emprego.
+            Auxilia na organização de registros de candidatos ideais de forma rápida e organizada.
+          </p>
+          <div class="buttons-vista">
+            <a href="https://github.com/devDouglasN/userRegistration_App" target="_blank">
+            <button>
+              <fa-icon class="button" [icon]="faGithub"></fa-icon>
+            </button>
+          </a>
+          </div>
+        </div>
+      </div>
+        </swiper-slide>
+        <swiper-slide class="swiper_slide swiper-slide" data-aos="fade-down" data-aos-delay="400">
+          <div class="projeto-card">
+        <div class="projeto-header" id="projeto-header">
+          <img src="./assets/safeexchange-image.png" alt="Imagem do projeto">
+      </div>
+        <div class="projeto-conteudo">
+          <p>
+            Aplicação web na qual os usuários podem cadastrar
+            pedidos e fazer ofertas para os pedidos de outros usuários,
+            inserindo informações como valor e data de entrega.
+          </p>
+          <div class="buttons-vista">
+            <a href="https://github.com/devDouglasN/safe_exchange" target="_blank">
+            <button>
+              <fa-icon class="button" [icon]="faGithub"></fa-icon>
+            </button>
+          </a>
+          </div>
+        </div>
+      </div>
+      </swiper-slide>
+      <swiper-slide class="swiper_slide swiper-slide" data-aos="fade-down" data-aos-delay="500">
+        <div class="projeto-card">
+        <div class="projeto-header" id="projeto-header">
+          <img src="./assets/clinicmed-image.png" alt="Imagem do projeto">
+      </div>
+      <div class="projeto-conteudo">
+        <p>
+          Clinic Med é uma API para uma clínica médica criada para monitorar
+          o cadastro de médicos, pacientes e agendamento de consultas.
+        </p>
+        <div class="buttons-vista">
+          <a href="https://github.com/devDouglasN/clinic-medi-pro" target="_blank">
+          <button>
+            <fa-icon class="button" [icon]="faGithub"></fa-icon>
+          </button>
+        </a>
+        </div>
+      </div>
+    </div>
+  </swiper-slide>
+    <swiper-slide class="swiper_slide swiper-slide" data-aos="fade-down" data-aos-delay="600">
+      <div class="projeto-card">
+      <div class="projeto-header" id="projeto-header">
+        <img src="./assets/proftechdesk-image.png" alt="Imagem do projeto">
+    </div>
+    <div class="projeto-conteudo">
+      <p>
+        Sistema de Help Desk que permite o cadastro e exclusão
+        de clientes e técnicos gerenciado pelo banco de dados,
+        possibilitando que os clientes registrem chamadas e os técnicos as atendam.
+      </p>
+      <div class="buttons-vista">
+        <a href="https://github.com/devDouglasN/proftech-desk" target="_blank">
+        <button>
+          <fa-icon class="button" [icon]="faGithub"></fa-icon>
+        </button>
+      </a>
+      </div>
+    </div>
+    </div>
+    </swiper-slide>
+    </swiper-container>
   </div>
 </section>
 
