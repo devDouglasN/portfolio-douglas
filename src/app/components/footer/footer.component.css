@@ -83,3 +83,14 @@ span {
     top: .7em;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .social-container {
+    flex-direction: column;
+  }
+  .redes-link {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1em;
+  }
+}

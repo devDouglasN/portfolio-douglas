@@ -19,9 +19,10 @@ a {
 }
 
 .sobre-img {
+  display: flex;
+  justify-content: center;
+  margin: auto;
   position: relative;
-  top: -4em;
-  right: -1000;
   width: 30em;
   border: 5px solid black;
 }
@@ -81,9 +82,67 @@ a {
   font-size: calc(.6em + .5vw);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1000px){
+
   .sobre-img {
-    width: 10em;
-    left: -7.5em;
+    width: 0%;
+    margin: 0 auto;
+  }
+
+  .imagem, .sobre-data {
+    width: 50%;
+    margin: 10px auto;
+  }
+
+  .card {
+    position: relative;
+    top: 1em;
+    left: 0;
+    padding: 1em;
+  }
+
+  .button-sobre {
+    justify-content: space-around;
+    position: relative;
+    left: 0;
   }
 }
+
+
+@media only screen and (max-width: 800px){
+
+  .sobre-img {
+    width: 70%;
+  }
+
+  .imagem {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .sobre-img {
+    width: 60%;
+  }
+
+  .imagem, .sobre-data {
+    width: 70%;
+    margin: 10px auto;
+  }
+}
+
+@media only screen and (max-width: 400px){
+
+  .sobre-img {
+    width: 50%;
+  }
+
+  .imagem {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+

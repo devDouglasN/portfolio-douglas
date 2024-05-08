@@ -50,6 +50,8 @@ a {
   left: 0px;
 }
 
+
+
 .background-image {
   position: absolute;
   top: -50px;
@@ -70,28 +72,6 @@ a {
   outline-color: #0072b1;
 }
 
-@media only screen and (max-width: 400px){
-  .inicio-titulo{
-    font-size: 4.5vw;
-  }
-
-  #typewriter{
-    font-size: 3.5vw;
-  }
-
-  .button-container{
-    width: 15em;
-    position: relative;
-    top: -2em;
-  }
-}
-
-@keyframes blink {
-  0% {opacity: 1;}
-  50% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
 .cursor {
   content: '|';
   animation: blink 1s infinite;
@@ -108,4 +88,82 @@ a {
   padding-top: 5px;
   border-bottom: 2px solid #f3f3f3;
   margin: 10px auto;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 400px) and (max-width: 1000px){
+
+  .inicio-titulo {
+    font-size: 8.5vw;
+  }
+
+  .home-subtitulo {
+    font-size: 4.4vw;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  #typewriter{
+    font-size: 4.5vw;
+  }
+
+  .button-container{
+    width: 3em;
+    position: relative;
+    top: -2em;
+  }
+
+  .background-image {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 400px){
+
+  .home-titulo, .home-subtitulo {
+    font-size: 1.6vw;
+    font-size: calc(1em + 1vw);
+    font-weight: 750;
+  }
+
+
+
+
+}
+
+
+
+
+
+
+@keyframes blink {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
 }

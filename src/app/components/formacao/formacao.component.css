@@ -40,10 +40,6 @@ ul {
   transition: all .3s;
 }
 
-.formacao-card-img {
-  height: 100px;
-}
-
 .formacao-card-img>img {
   object-fit: cover;
   height: 125px;
@@ -71,12 +67,68 @@ ul {
   top: -.5em;
 }
 
-@media only screen and (max-width: 400px){
-  .educacion-cards{
-    margin-top: -2em;
+.content {
+  position: relative;
+}
+@media only screen and (max-width: 1000px) {
+
+  .formacao-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .formacao-card {
+    width: 90vw;
+    margin: 5 auto;
+  }
+
+  #nome, .text, .encerra {
+    font-size: 16px;
   }
 }
 
-.content {
-  position: relative;
+@media only screen and (max-width: 600px) {
+
+  .formacao-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .formacao-card {
+    width: 90vw;
+    margin: 5 auto;
+  }
+
+  #nome, .text, .encerra {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+
+  .titulo-section {
+    position: relative;
+    top: 4em;
+  }
+
+  .cards-container {
+    position: relative;
+    top: 7em;
+  }
+
+  .formacao-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .formacao-card {
+    width: 90vw;
+    margin: 4 auto;
+  }
+
+  .h2 {
+    position: relative;
+    top: -7em;
+  }
+
+  #nome, .text, .encerra {
+    font-size: 11px;
+  }
 }

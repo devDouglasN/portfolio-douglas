@@ -209,3 +209,19 @@ button {
     transform: translateY(-15px);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .contato-container {
+    flex-direction: column;
+  }
+  .img-contato {
+    position: static;
+    width: 100%;
+  }
+  .img-fluid {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+}
+
