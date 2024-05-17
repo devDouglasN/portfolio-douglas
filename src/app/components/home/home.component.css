@@ -24,15 +24,6 @@ a {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.home-social {
-  position: relative;
-  top: 7em;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .home-social-links {
   display: inline-flex;
   column-gap: 1em;
@@ -46,11 +37,9 @@ a {
 
 .home-data {
   position: relative;
-  top: -12em;
-  left: 0px;
+  top:  17em;
+  left: 500px;
 }
-
-
 
 .background-image {
   position: absolute;
@@ -89,13 +78,6 @@ a {
   border-bottom: 2px solid #f3f3f3;
   margin: 10px auto;
 }
-
-
-
-
-
-
-
 
 @media only screen and (min-width: 400px) and (max-width: 1000px){
 
@@ -138,12 +120,6 @@ a {
   }
 }
 
-
-
-
-
-
-
 @media (max-width: 400px){
 
   .home-titulo, .home-subtitulo {
@@ -151,16 +127,7 @@ a {
     font-size: calc(1em + 1vw);
     font-weight: 750;
   }
-
-
-
-
 }
-
-
-
-
-
 
 @keyframes blink {
   0% {opacity: 1;}
