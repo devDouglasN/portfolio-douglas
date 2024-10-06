@@ -1,184 +1,88 @@
-.move-up {
-  margin-top: -3em;
-  position: absolute;
-  font-weight: bold;
-}
+/* Removido: .move-up (não utilizado) */
 
 .projetos-cards-container {
-  position: relative;
-  top: 0em;
+  background-color: #2D2D2D;
   overflow: hidden;
   width: 100%;
-  padding-left: 2%;
-  padding-right: 2%;
-  box-shadow: 0 15px 30px rgba(255, 17, 17, 0.25);
-  padding-top: 0.62em;
-  background-color: #b1b0b01a;
+  padding: 1em;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
+/* Estilos para o Swiper */
 .my_swiper {
+  padding: 1em 0;
+}
+
+.swiper-slide {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.swiper_slide {
-  flex: 0 0 calc(26% - 30px);
-  max-width: calc(100% - 20px);
-  box-sizing: border-box;
-  margin: 10px;
-
-  overflow: hidden;
-  background-position: center center;
-  background-size: cover;
-}
-
-.swiper-container-free-mode > .swiper_slide{
-  transition-timing-function : linear;
+  justify-content: center;
 }
 
 .projeto-card {
-  border-radius: 25px;
-  background: rgba(255, 255, 255, 0.13);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  height: 370px;
-  margin-bottom: 2em;
-  list-style: none;
-  list-style-type: none;
+  color: #333;
   text-align: center;
-  transition: all .1s;
+  transition: all 0.3s;
 }
 
 .projeto-card:hover {
-  border: 1px solid #D49BB0;
-  transform: scale(1.1);
-  overflow: auto;
-}
-
-.swiper-pagination-bullet {
-  background: #f3f3f3;
-}
-
-.swiper-pagination-bullet-active {
-  background: #D49BB0;
+  transform: scale(1.05);
 }
 
 .projeto-header {
   height: 160px;
-  transition: all 1s;
-  max-width: 100%;
 }
 
 .projeto-header img {
   object-fit: cover;
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
 .projeto-conteudo {
-  background-color: #313131;
-  padding: 10px 6px;
-  overflow: auto;
+  padding: 15px;
 }
 
 .projeto-conteudo p {
-  font-size: 1.1em;
-  overflow-wrap: break-word;
+  font-size: 1em;
+  margin-bottom: 1em;
 }
 
-.projeto-conteudo {
-  background-color: #313131;
-  padding: 10px 6px;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+.buttons-vista button {
+  background-color: #08d9d6;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.buttons-vista {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.buttons-vista button:hover {
+  background-color: #06b1c1;
 }
 
+/* Botões de navegação do Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
 
-
-@media only screen and (max-width: 1000px){
-
-  #nome {
-    font-size: 3vw;
-    margin-bottom: 2em;
-  }
-
-  .swiper_slide {
-    flex: 0 0 calc(95% - 20px);
-    max-width: calc(150% - 20px);
-  }
-
-  .projeto-conteudo {
-    width: 90vw;
-    margin: 0 auto;
-  }
-
-  .projetos-cards-container {
-    flex-direction: column;
-  }
+/* Responsividade */
+@media (max-width: 1000px) {
   .projeto-card {
-    width: 90vw;
-    margin: 10px auto;
+    max-width: 250px;
   }
 }
 
-@media only screen and (max-width: 800px){
-
-  #nome {
-    font-size: 3vw;
-    margin-bottom: 2em;
-  }
-
-  .swiper_slide {
-    flex: 0 0 calc(100% - 20px);
-    max-width: calc(100% - 20px);
-  }
-
-  .projeto-conteudo {
-    width: 90vw;
-    margin: 0 auto;
-  }
-
-  .projetos-cards-container {
-    flex-direction: column;
-  }
+@media (max-width: 600px) {
   .projeto-card {
-    width: 90vw;
-    margin: 10px auto;
-  }
-}
-
-@media only screen and (max-width: 600px){
-
-  #nome {
-    font-size: 3vw;
-    margin-bottom: 2em;
-  }
-
-  .swiper_slide {
-    flex: 0 0 calc(100% - 20px);
-    max-width: calc(100% - 20px);
-  }
-
-  .projeto-conteudo {
-    width: 90vw;
-    margin: 0 auto;
-  }
-
-  .projetos-cards-container {
-    flex-direction: column;
-  }
-
-  .projeto-card {
-    width: 90vw;
-    margin: 10px auto;
+    max-width: 200px;
   }
 }

@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,7 +12,8 @@ import { ContatoComponent } from './components/contato/contato.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjetosComponent } from './components/projetos/projetos.component';
-import { RouterModule } from '@angular/router';
+import { VideosComponent } from './components/videos/videos.component';
+import { CertificateComponent } from './components/certificate/certificate.component';
 
 @NgModule({
   declarations: [
@@ -24,20 +25,21 @@ import { RouterModule } from '@angular/router';
     ContatoComponent,
     FooterComponent,
     SkillsComponent,
-    ProjetosComponent
-    ],
+    ProjetosComponent,
+    VideosComponent,
+    CertificateComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule,
     FontAwesomeModule
   ],
   providers: [
     provideClientHydration()
   ],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA,
-    NO_ERRORS_SCHEMA
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ]
 })
 export class AppModule { }

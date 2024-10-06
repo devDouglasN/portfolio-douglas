@@ -14,7 +14,7 @@ export class HomeComponent   {
     this.typeEffect2.nativeElement.innerHTML = '';
 
     this.typeWriter(this.typeEffect.nativeElement, 'Olá, me chamo Douglas', 0, 80).then(() => {
-    this.typeWriter(this.typeEffect2.nativeElement, 'Sou desenvolvedor Backend Java', 0, 80);
+    this.typeWriter(this.typeEffect2.nativeElement, 'Sou profissional de segurança cibernética focado em cloud', 0, 80);
     });
   }
 

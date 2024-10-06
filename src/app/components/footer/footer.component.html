@@ -1,22 +1,20 @@
-<footer class="text-center" style="background-color: #000000;">
-  <div class="social-container">
-      <div class="redes-link">
-        <a class="icon icon-github" href="https://github.com/devDouglasN" target="_blank">
-            <fa-icon [icon]="faGithub"></fa-icon>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://github.com/devDouglasN" target="_blank">
+          <fa-icon [icon]="faGithub"></fa-icon>
         </a>
-        <a class="icon icon-linkedin" href="https://www.linkedin.com/in/douglas-nascimento-323043269/"
-            target="_blank">
-            <fa-icon [icon]="faLinkedin"></fa-icon>
+        <a href="https://www.linkedin.com/in/douglascloudsec/" target="_blank">
+          <fa-icon [icon]="faLinkedin"></fa-icon>
         </a>
-        <a class="icon icon-linkedin" href="./assets/curriculo-dev.pdf" target="_blank" download>
-          <fa-icon [icon]="faIdBadge"></fa-icon>
-      </a>
+        <a href="./assets/curriculo-atualizado2024.pdf" target="_blank" download>
+          <fa-icon [icon]="faFilePdf"></fa-icon>
+        </a>
+      </div>
+      <div class="footer-text">
+        <p>&copy; {{ currentYear }} Douglas Nascimento. Todos os direitos reservados.</p>
+      </div>
     </div>
-  </div>
-  <div class="copy">
-    <p>
-      douglas&#64;<span class="highlight">doug-computer</span>:
-      ~<span>$ awaken senses.txt</span>
-    </p>
   </div>
 </footer>

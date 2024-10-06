@@ -1,35 +1,43 @@
-<section id="sobre" class="sobre section-two">
-  <div data-aos="zoom-in-up" class="d-flex justify-content-center">
-    <h2 class="h2 titulo-section move-up">Sobre mim</h2>
-  </div>
-  <div class="row sobre-container">
-    <div data-aos="fade-down-right" data-aos-delay="200" class="col-xs-12 col-sm-6 col-lg-6 col-md-6 imagem">
-    <img src="./assets/eu.jpg" alt="Minha foto" class="img-fluid sobre-img">
-  </div>
-      <div data-aos="fade-up-left" data-aos-delay="300" class="sobre-data col-xs-12 col-sm-6 col-lg-6 col-md-6">
-        <div class="card">
-          <p class="sobre-descricao">
-            Me chamo Douglas, tenho 26 anos e sou estudando do 5º semestre de Sistemas de Informação.
-            Atuo como desenvolvedor back-end e, ao longo de quase dois anos de estudos, me dediquei ao Java e seu framework, Spring.
-            Durante esse período, adquiri conhecimentos essenciais para a área de back-end, sendo: linguagem SQL (MySQL/PostgreSQL),
-            testes (JUnit/Mockito), Git/Github, além de práticas ágeis com Kanban.
-            Também estudei o framework Angular, pois percebi a importância de entender a comunicação entre back-end e front-end.
-            Na prática, aprendi a utilizar Docker e Docker Compose, e atualmente estou aprimorando minhas habilidades com a plataforma de nuvem AWS.
-            Já apliquei estrutura de microsserviços em um dos meus projetos e tenho conhecimentos sobre serviço de mensageria usando o RabbitMQ.
-            Estou empenhado em contribuir para projetos e crescer profissionalmente.
-            Sou determinado, estou pronto para agregar.
-            Passei a ter uma paixão genuína pela área e ao que faço. Me sinto preparado
-            para fazer a diferença onde quer que eu esteja.
-          </p>
-       </div>
-        <div class="button-sobre">
-          <a data-aos="fade-down-left" data-aos-delay="100" href="#contato" class="button">
-            <fa-icon [icon]="faPaperPlane"></fa-icon>Contate-me
-          </a>
-          <a data-aos="fade-down-left" data-aos-delay="200" href="./assets/curriculo-dev-atualizado-06.pdf" download class="button">
-            <fa-icon [icon]="faFileLines"></fa-icon>Baixar currículo
-          </a>
+<section id="sobre" class="sobre-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2>Sobre Mim</h2>
+    </div>
+    <div class="row align-items-center">
+      <!-- Coluna da Imagem -->
+      <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-delay="200">
+        <div class="sobre-imagem">
+          <img src="./assets/eu.jpg" alt="Douglas Nascimento" class="img-fluid rounded-circle">
         </div>
       </div>
+      <!-- Coluna do Texto -->
+      <div class="col-lg-6 col-md-12" data-aos="fade-left" data-aos-delay="300">
+        <div class="sobre-conteudo">
+          <p>
+            Oi, tudo bem?
+
+              Me chamo Douglas, tenho 26 anos e estou no 5º semestre de Sistemas de Informação. Nos últimos quase dois anos,
+              atuei como desenvolvedor back-end, especialmente com Java e o framework Spring. Durante esse período, desenvolvi
+              habilidades fundamentais para a área.
+
+              Atualmente, estou direcionando minha carreira para a área de cibersegurança na nuvem, focando na plataforma AWS.
+              Recentemente, conquistei minha primeira certificação como AWS Certified Cloud Practitioner, e continuo aprofundando
+              meus conhecimentos nos diversos serviços da AWS, com o objetivo de unir meu background em desenvolvimento à
+              segurança em ambientes de nuvem.
+
+              Estou animado para aplicar essa combinação de habilidades em novos desafios, sempre buscando fortalecer tanto
+              a segurança quanto a eficiência dos sistemas que ajudo a construir.
+            </p>
+          <div class="buttons">
+            <a href="https://wa.me/5511953511949" target="_blank" class="btn btn-primary">
+              <fa-icon [icon]="faPaperPlane"></fa-icon> Contate-me
+            </a>
+            <a href="./assets/curriculo-atualizado2024.pdf" download class="btn btn-secondary">
+              <fa-icon [icon]="faFileLines"></fa-icon> Baixar currículo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

@@ -1,0 +1,23 @@
+:host {
+  display: block;
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.video-container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.video-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+iframe {
+  border: none;
+}

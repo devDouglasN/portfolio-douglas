@@ -1,0 +1,78 @@
+.certificates-container {
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.certificates-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.certificate-card {
+  margin: 30px;
+  width: 200px;
+  position: relative;
+}
+
+.certificate-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.certificate-image-container {
+  overflow: hidden;
+}
+
+.certificate-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.certificate-card:hover .certificate-image-container img {
+  transform: scale(1.05);
+}
+
+.certificate-title {
+  margin-top: 8px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  text-transform: none; /* Manter a capitalização original */
+  /* Removido height e overflow */
+}
+
+.title-text,
+.credly-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0; /* Garantir que o texto comece do topo */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.title-text {
+  opacity: 1;
+}
+
+.credly-text {
+  opacity: 0;
+}
+
+.certificate-card:hover .title-text {
+  opacity: 0;
+}
+
+.certificate-card:hover .credly-text {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .certificate-card {
+    width: 100%;
+  }
+}

@@ -1,68 +1,59 @@
+/* Estilos Globais do Navbar */
 .navbar {
-  border-bottom: 0.6px solid #f3f3f3;
+  background-color: #fff;
+  padding: 0.5rem 0; /* Padding vertical reduzido */
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-img {
-  width: 3.0em;
+.navbar-brand img {
+  width: 100px; /* Tamanho do logo ajustado */
 }
 
-.nav-item {
+.navbar-nav .nav-item {
+  margin-left: 1rem; /* Margem esquerda reduzida */
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
   position: relative;
-  margin-left: 1.5em;
-  font-size: calc(.6em + .5vw);
-  text-align: center;
+  transition: color 0.3s ease;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.nav-item::before {
+.navbar-nav .nav-link::after {
   content: '';
   position: absolute;
-  left: 0;
-  bottom: -2px;
+  width: 0%;
   height: 2px;
-  width: 0;
-  border-radius: 2px;
-  background-color: #D49BB0;
-  background: #11bebe;
-  background: -webkit-linear-gradient(to right, #0a0508, #11bebe);
-  background: linear-gradient(to right, #3632a8, #11bebe);
-  transition: 0.4s ease;
+  background-color: #08d9d6;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
 }
 
-.nav-item:hover::before {
+.navbar-nav .nav-link:hover {
+  color: #08d9d6;
+}
+
+.navbar-nav .nav-link:hover::after {
   width: 100%;
 }
 
-.navbar li {
-  list-style: none;
+.navbar-toggler {
+  border: none;
 }
 
-.navbar li a {
-  text-decoration: none;
-  color: #f3f3f3;
-  margin-left: 1.5em;
-  align-items: center;
+.navbar-toggler-icon {
+  /* Seu código existente */
 }
 
-.nav_container {
-  transition: all .3s;
-}
-
-.nav li a:hover {
-  background-image: linear-gradient(to right, #ff7e5f, #feb47b, #fff689, #7cffcb, #4bf3d5);
-  background-size: 200% 100%;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: background-position 0.5s ease;
-}
-
-.nav li a:hover {
-  background-position: -100% 0;
-}
-
-@media only screen and (min-width: 400px) and (max-width: 1000px){
-
-img {
-  width: 3.0em;
-}
+@media (max-width: 992px) {
+  .navbar-nav .nav-item {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
 }

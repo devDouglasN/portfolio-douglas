@@ -1,25 +1,48 @@
-<section id="contato" class="contato section vh-100">
-  <div data-aos="zoom-in-up" class="justify-content-center">
-    <h2 class="h2 titulo-section move-up">Contato</h2>
-  </div>
-  <div class="contato-container">
-    <div class="img-contato">
-      <img src="./assets/contato-img.jpg" alt="Animacao" class="img-fluid">
+<section id="contato" class="contato section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2>Contato</h2>
+      <p>Estou disponível para projetos e colaborações. Entre em contato!</p>
     </div>
-    <div class="contato-info">
-      <div data-aos="fade-down-right" data-aos-delay="180" class="contato-card">
-        <fa-icon [icon]="mail" class="icon-card"></fa-icon>
-        <h3 class="h3 titulo">Email</h3>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dougnascimento.me&#64;gmail.com" class="contato-button" target="_blank">
-        Contate-me <fa-icon [icon]="send"class="contato-button-icon"></fa-icon></a>
+
+    <div class="contact-content">
+      <div class="contact-info" data-aos="fade-right">
+        <h3>Vamos trabalhar juntos</h3>
+        <p>
+          Estou sempre aberto a discutir novos projetos, ideias criativas ou oportunidades para fazer parte da sua visão.
+        </p>
+        <ul class="info-list">
+          <li>
+            <a href="mailto:dougnascimento.me@gmail.com" class="contact-link">
+              <fa-icon [icon]="mail" class="icon"></fa-icon>
+              <span>douglas.cloudsec&#64;gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/55953511949" target="_blank" class="contact-link">
+              <fa-icon [icon]="wpp" class="icon"></fa-icon>
+              <span>+55 9 53511-949</span>
+            </a>
+          </li>
+        </ul>
       </div>
-      <div data-aos="fade-up-left" data-aos-delay="230" class="contato-card">
-        <fa-icon [icon]="wpp" class="icon-card"></fa-icon>
-        <h3 class="h3 titulo">WhatsApp</h3>
-        <a href="https://wa.me/953511949" target="_blank" class="contato-button">Contate-me<fa-icon [icon]="send"
-          class="contato-button-icon"></fa-icon></a>
+
+      <div class="contact-form" data-aos="fade-left">
+        <form (submit)="onSubmit()">
+          <div class="form-group">
+            <input type="text" placeholder="Seu Nome" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Seu Email" required />
+          </div>
+          <div class="form-group">
+            <textarea rows="5" placeholder="Sua Mensagem" required></textarea>
+          </div>
+          <button type="submit" class="btn">
+            Enviar Mensagem <fa-icon [icon]="send"></fa-icon>
+          </button>
+        </form>
       </div>
     </div>
   </div>
 </section>
-

@@ -1,79 +1,113 @@
-<section id="skills" class="skills section vh-100">
-  <h2 class="titulo-section">Skills</h2>
-  <div data-aos="zoom-in-up" class="d-flex justify-content-center">
-  <div class="skills-container hide-container">
-    <div class="hard-skills">
-      <div class="hard-container">
-        <div data-aos="fade-down" data-aos-delay="100" class="cards">
-          <a href="https://docs.oracle.com/en/java/" target="_blank">
-            <div class="card">
-              <fa-icon class="icon-hs" [icon]="java"></fa-icon>
-              <h3 class="titulo-hs">Java/Spring</h3>
+<!-- skills.component.html -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <!-- Título Principal -->
+    <div class="section-header" data-aos="fade-up">
+      <h2>Minhas Habilidades</h2>
+    </div>
+
+    <!-- Seção de Cibersegurança na Nuvem AWS -->
+    <div class="skills-cloud" data-aos="fade-right" data-aos-delay="100">
+      <h3>Cibersegurança na Nuvem AWS</h3>
+      <div class="row align-items-center">
+        <!-- Card 1: AWS IAM -->
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./assets/IAM-Identity-Center.svg" alt="AWS IAM">
             </div>
-          </a>
+            <h4>AWS IAM</h4>
+          </div>
+        </div>
+        <!-- Card 2: AWS Security Hub -->
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./assets/Inspector.svg" alt="AWS Security Hub">
+            </div>
+            <h4>Amazon Inspector</h4>
+          </div>
+        </div>
+        <!-- Card 3: AWS KMS -->
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./assets/GuardDuty.svg" alt="AWS KMS">
+            </div>
+            <h4>Amazon GuardDuty</h4>
+          </div>
+        </div>
+        <!-- Card 4: AWS Cloud Practitioner -->
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="./assets/WAF.svg" alt="AWS Cloud Practitioner">
+            </div>
+            <h4>AWS WAF</h4>
+          </div>
         </div>
       </div>
-      <div data-aos="fade-down" data-aos-delay="200" class="cards">
-        <div class="icon">
-          <a href="https://docs.docker.com/" target="_blank">
-            <div class="card">
-              <fa-icon class="icon-hs" [icon]="docker"></fa-icon>
-              <h3 class="titulo-hs">Docker</h3>
+    </div>
+
+    <!-- Seção de Habilidades em Programação -->
+    <div class="skills-programming" data-aos="fade-left" data-aos-delay="200">
+      <h3>Habilidades em Programação</h3>
+      <div class="row align-items-center">
+        <!-- Card 1: Java/Spring -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <fa-icon [icon]="faJava"></fa-icon>
             </div>
-          </a>
+            <h4>Java/Spring</h4>
+          </div>
         </div>
-      </div>
-      <div data-aos="fade-down" data-aos-delay="300" class="cards">
-        <div class="icon">
-          <a href="https://dev.mysql.com/doc/workbench/en/" target="_blank">
-            <div class="card">
-              <fa-icon class="icon-hs" [icon]="mysql"></fa-icon>
-              <h3 class="titulo-hs">SQl</h3>
+        <!-- Card 2: Docker -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <fa-icon [icon]="faDocker"></fa-icon>
             </div>
-          </a>
+            <h4>Docker</h4>
+          </div>
         </div>
-      </div>
-      <div data-aos="fade-down" data-aos-delay="400" class="cards">
-        <div class="icon">
-          <a href="https://git-scm.com/doc" target="_blank">
-            <div class="card">
-              <fa-icon class="icon-hs" [icon]="git"></fa-icon>
-              <h3 class="titulo-hs">Git</h3>
+        <!-- Card 3: SQL -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <fa-icon [icon]="faDatabase"></fa-icon>
             </div>
-          </a>
+            <h4>SQL</h4>
+          </div>
         </div>
-      </div>
-      <div data-aos="fade-down" data-aos-delay="500" class="cards">
-        <div class="icon">
-          <a href="https://docs.github.com/pt" target="_blank">
-            <div class="card">
-              <fa-icon class="icon-hs" [icon]="github"></fa-icon>
-              <h3 class="titulo-hs">GitHub</h3>
+        <!-- Card 4: Git -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <fa-icon [icon]="faGit"></fa-icon>
             </div>
-          </a>
+            <h4>Git</h4>
+          </div>
         </div>
-      </div>
-      <div data-aos="fade-down" data-aos-delay="600" class="cards">
-        <div class="icon">
-          <a href="https://docs.aws.amazon.com/" target="_blank">
-            <div class="card">
-              <fa-icon class="icon-hs" [icon]="aws"></fa-icon>
-              <h3 class="titulo-hs">AWS</h3>
+        <!-- Card 5: GitHub -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <fa-icon [icon]="faGithub"></fa-icon>
             </div>
-          </a>
+            <h4>GitHub</h4>
+          </div>
         </div>
-      </div>
-      <div data-aos="fade-down" data-aos-delay="700" class="cards">
-        <div class="icon">
-          <a href="https://angular.io/docs" target="_blank">
-            <div class="card">
-              <fa-icon class="icon-hs" [icon]="angular"></fa-icon>
-              <h3 class="titulo-hs">Angular</h3>
+        <!-- Card 6: Angular -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <fa-icon [icon]="faAngular"></fa-icon>
             </div>
-          </a>
+            <h4>Angular</h4>
+          </div>
         </div>
       </div>
     </div>
   </div>
- </div>
 </section>

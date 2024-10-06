@@ -1,134 +1,98 @@
-ul {
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
-.move-up {
-  font-weight: bold;
+.formacao-section {
+  padding: 80px 0;
+  background-color: #f0f0f0;
 }
 
-.titulo-section {
+.section-header h2 {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.section-header h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #ff4b2b;
+  display: block;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.card {
   position: relative;
-  top: -5em;
-}
-
-.cards-container {
-  position: relative;
-  top: -7em;
-}
-
-.formacao-cards {
-  display: grid;
-  grid-template-columns:  repeat(2, 1fr);
-  justify-items: center;
-}
-
-.formacao-card {
-  position: relative;
-  border-radius: 1em;
   overflow: hidden;
-  width: 40vw;
-  display: flex;
-  flex-direction: row;
-  height: 115px;
-  list-style: none;
-  list-style-type: none;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  background-color: rgb(93, 84, 84);
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  margin: 1em 0;
-  transition: all .3s;
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.formacao-card-img>img {
-  object-fit: cover;
-  height: 125px;
+.card-bg {
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  filter: brightness(0.7);
 }
 
-.formacao-card-content {
-  padding: .7em;
-  width: 100%;
+.card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8));
 }
 
-.formacao-card-content h3 {
-  font-size: calc(.6em + .3vw);
+.card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.text {
-  color: #c2c0c0;
-  font-size: calc(.4em + .3vw);
-  letter-spacing: 1px;
-  margin-bottom: 0.5em;
+.card p {
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
-.encerra {
-  font-size: calc(.4em + .3vw);
-  position: relative;
-  top: -.5em;
+.card span {
+  font-size: 16px;
+  color: #ddd;
 }
 
-.content {
-  position: relative;
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
-@media only screen and (max-width: 1000px) {
 
-  .formacao-cards {
-    grid-template-columns: 1fr;
-  }
+.card:hover .card-bg {
+  filter: brightness(0.9);
+}
 
-  .formacao-card {
-    width: 90vw;
-    margin: 5 auto;
-  }
-
-  #nome, .text, .encerra {
-    font-size: 16px;
+@media (max-width: 991px) {
+  .card-bg {
+    height: 200px;
   }
 }
 
-@media only screen and (max-width: 600px) {
-
-  .formacao-cards {
-    grid-template-columns: 1fr;
+@media (max-width: 767px) {
+  .card-bg {
+    height: 180px;
   }
-
-  .formacao-card {
-    width: 90vw;
-    margin: 5 auto;
+  .card h3 {
+    font-size: 20px;
   }
-
-  #nome, .text, .encerra {
-    font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 400px){
-
-  .titulo-section {
-    position: relative;
-    top: 4em;
-  }
-
-  .cards-container {
-    position: relative;
-    top: 7em;
-  }
-
-  .formacao-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .formacao-card {
-    width: 90vw;
-    margin: 4 auto;
-  }
-
-  .h2 {
-    position: relative;
-    top: -7em;
-  }
-
-  #nome, .text, .encerra {
-    font-size: 11px;
+  .card p,
+  .card span {
+    font-size: 14px;
   }
 }

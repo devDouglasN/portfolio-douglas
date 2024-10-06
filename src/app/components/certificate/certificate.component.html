@@ -1,0 +1,16 @@
+<div class="certificates-container">
+  <h2>Meus Certificados</h2>
+  <div class="certificates-grid">
+    <div class="certificate-card" *ngFor="let certificate of certificates">
+      <a [href]="certificate.credlyUrl" target="_blank" class="certificate-link">
+        <div class="certificate-image-container">
+          <img [src]="certificate.imageUrl" [alt]="certificate.title">
+        </div>
+        <div class="certificate-title">
+          <span class="title-text">{{ certificate.title }}</span>
+          <span class="credly-text">Ver no Credly</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
