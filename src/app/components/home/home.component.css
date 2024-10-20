@@ -1,3 +1,8 @@
+/* home.component.css */
+
+/* Importando as fontes (caso não tenha feito no index.html) */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Raleway:wght@500&display=swap'); */
+
 /* Estilos globais */
 a {
   text-decoration: none;
@@ -5,66 +10,89 @@ a {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif; /* Define Poppins como fonte padrão */
+  margin: 0;
+  padding: 0;
 }
 
 .home {
   position: relative;
-}
-
-.background-image {
-  position: fixed;
-  top: -50px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -2;
-}
-
-/* Overlay para melhorar o contraste */
-.overlay {
-  position: fixed;
-  top: -50px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-
-/* Container principal */
-.home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; /* Alinha à direita */
-  padding: 20px;
+  background-color: #000; /* Fundo preto */
   height: 100vh;
-  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
 }
 
-/* Dados do Home */
+.home-content {
+  display: flex;
+  align-items: flex-start; /* Alinha itens ao topo */
+  margin-top: -50px;       /* Move o conteúdo para cima */
+}
+
 .home-data {
-  margin-top: 20px;
+  margin-right: 40px; /* Espaçamento entre nome e imagem */
+}
+
+.floating-image-container {
+  position: relative;
+}
+
+.floating-image {
+  width: 600px; /* Aumenta o tamanho da imagem */
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.9)); /* Aumenta o brilho */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(-5%);
+  }
 }
 
 /* Estilos das frases */
 .home-titulo {
-  font-size: calc(1.5em + 1vw);
+  font-family: 'Poppins', sans-serif; /* Aplicando Poppins */
+  font-size: calc(2.5em + 1vw);       /* Aumenta o tamanho da fonte */
   font-weight: 700;
   color: #ffffff;
-  text-align: right;
+  text-align: left;
   margin: 0;
-  transition: opacity 0.5s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
 }
 
 .home-subtitulo {
-  font-size: calc(1em + 0.5vw);
+  font-family: 'Raleway', sans-serif; /* Aplicando Raleway */
+  font-size: calc(1.5em + 0.5vw);     /* Aumenta o tamanho da fonte */
   font-weight: 500;
-  color: #dcdcdc;
-  text-align: right;
-  margin: 0;
-  transition: opacity 0.5s ease-in-out;
+  color: #00ffff; /* Verde ciano */
+  text-align: left;
+  margin: 10px 0 0 0; /* Adiciona margem superior */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
+}
+
+/* Estilos para os ícones de redes sociais */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00ffff; /* Verde ciano */
 }
 
 /* Efeito de digitação */
@@ -88,12 +116,29 @@ body {
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .home-container {
+  .home-content {
+    flex-direction: column;
     align-items: center; /* Centraliza no mobile */
+    margin-top: 0;
+  }
+
+  .home-data {
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .floating-image {
+    width: 300px; /* Ajusta o tamanho da imagem para dispositivos móveis */
   }
 
   .home-titulo,
   .home-subtitulo {
     text-align: center;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+    font-size: 1.8rem;
   }
 }

@@ -1,111 +1,254 @@
 <!-- skills.component.html -->
+
+
 <section id="skills" class="skills-section">
   <div class="container">
-    <!-- Título Principal -->
-    <div class="section-header" data-aos="fade-up">
-      <h2>Minhas Habilidades</h2>
+    <!-- Título da Seção -->
+    <div class="section-header">
+      <h2>Habilidades</h2>
     </div>
 
-    <!-- Seção de Cibersegurança na Nuvem AWS -->
-    <div class="skills-cloud" data-aos="fade-right" data-aos-delay="100">
-      <h3>Cibersegurança na Nuvem AWS</h3>
-      <div class="row align-items-center">
-        <!-- Card 1: AWS IAM -->
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./assets/IAM-Identity-Center.svg" alt="AWS IAM">
-            </div>
-            <h4>AWS IAM</h4>
-          </div>
-        </div>
-        <!-- Card 2: AWS Security Hub -->
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./assets/Inspector.svg" alt="AWS Security Hub">
-            </div>
-            <h4>Amazon Inspector</h4>
-          </div>
-        </div>
-        <!-- Card 3: AWS KMS -->
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./assets/GuardDuty.svg" alt="AWS KMS">
-            </div>
-            <h4>Amazon GuardDuty</h4>
-          </div>
-        </div>
-        <!-- Card 4: AWS Cloud Practitioner -->
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="./assets/WAF.svg" alt="AWS Cloud Practitioner">
-            </div>
-            <h4>AWS WAF</h4>
-          </div>
+<!-- Seção de Cibersegurança -->
+<section id="cybersecurity-skills" class="skills-section">
+  <div class="container skills-container">
+    <!-- Descrição das Habilidades -->
+    <div class="skills-description">
+      <h3>Cibersegurança</h3>
+      <p>{{ skillDescription }}</p>
+    </div>
+
+    <!-- Grid de Habilidades de Cibersegurança -->
+    <div class="skills-grid">
+      <!-- AWS IAM -->
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Tenho conhecimentos sobre o AWS IAM, uma ferramenta essencial para gerenciar identidades e controlar o acesso a recursos na AWS. Utilizo o IAM para definir permissões adequadas para usuários e serviços, garantindo que cada um tenha apenas os acessos necessários. Sou capaz de configurar usuários, grupos e funções, além de aplicar autenticação multifator (MFA) para reforçar a segurança. Com o IAM, consigo garantir que o ambiente na nuvem esteja bem controlado e seguro.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="assets/IAM-Identity-Center.svg" alt="AWS IAM" />
         </div>
       </div>
+
+      <!-- AWS S3 -->
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Possuo experiência no uso do Amazon S3, um serviço de armazenamento altamente escalável e seguro da AWS. Utilizo o S3 para armazenar e gerenciar grandes volumes de dados de maneira eficiente, aproveitando seus recursos de replicação, versionamento e políticas de ciclo de vida para otimizar o uso de espaço e reduzir custos. Também sou capaz de configurar e aplicar controles de acesso detalhados, integrando o S3 com ferramentas como o AWS KMS para criptografar dados sensíveis. Além disso, uso o S3 para hospedar conteúdo estático e garantir alta disponibilidade e durabilidade dos dados armazenados.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="assets/Simple Storage Service.svg" alt="AWS S3" />
+        </div>
+      </div>
+
+      <!-- Splunk -->
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Tenho conhecimento no uso do Splunk Enterprise, uma plataforma para monitoramento, análise e visualização de dados em tempo real. Utilizo a ferramenta para coletar e indexar grandes volumes de dados, extraindo insights valiosos para diagnóstico de problemas, monitoramento de segurança e análise de performance. Com o Splunk, consigo criar dashboards personalizados, configurar alertas automatizados e realizar buscas detalhadas, ajudando na identificação de anomalias e no suporte à tomada de decisão. A plataforma é fundamental para transformar dados brutos em informações úteis e acionáveis para o negócio.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Splunk</title><path d="M23.348 11.911l-2.241-1.091v-.65L24 11.621v.593l-2.893 1.438v-.636zm-5.397 1.841h-.961v-5.31h.961v3.116h.102l1.28-1.481.723.31-1.23 1.316 1.453 1.809-.888.311-1.44-1.996zm-2.577-.002v-2.068a2.685 2.685 0 0 0-.026-.42.791.791 0 0 0-.09-.26c-.113-.202-.308-.304-.59-.304a.888.888 0 0 0-.461.113.673.673 0 0 0-.286.33 1.012 1.012 0 0 0-.07.263c-.012.13-.019.262-.017.395v1.95h-.961v-3.614h.961l.002.485c.185-.2.373-.348.566-.437.192-.089.418-.134.673-.134.286 0 .527.058.721.177a1.016 1.016 0 0 1 .475.665 1.972 1.972 0 0 1 .054.448c.002.1.004.22.004.358v2.053zm-4.115.002l-.002-.485a1.783 1.783 0 0 1-.565.437 1.597 1.597 0 0 1-.674.135c-.285 0-.524-.057-.72-.17a.972.972 0 0 1-.425-.504.75.75 0 0 1-.054-.167 1.918 1.918 0 0 1-.033-.199 2.033 2.033 0 0 1-.017-.258 15.516 15.516 0 0 1-.005-.355V10.13h.956v2.07c-.003.141.006.282.026.42.015.092.045.18.09.26.113.204.308.306.59.306.36 0 .606-.15.74-.449.035-.082.06-.168.074-.257.017-.134.024-.269.022-.403v-1.95h.955v3.624zM7.184 8.44h.955v5.31h-.955zM5.759 11.9c0-.396-.08-.708-.24-.937a.759.759 0 0 0-.657-.345.804.804 0 0 0-.693.366c-.171.245-.256.574-.253.99 0 .405.084.723.25.957a.796.796 0 0 0 .69.347.685.685 0 0 0 .433-.135.985.985 0 0 0 .277-.34c.071-.14.121-.292.147-.448.03-.151.043-.3.046-.455m1.01-.036c.003.266-.04.532-.129.786-.082.23-.204.441-.364.626-.31.361-.764.567-1.24.563a1.67 1.67 0 0 1-.313-.028 1.041 1.041 0 0 1-.275-.098 1.33 1.33 0 0 1-.257-.178 2.379 2.379 0 0 1-.265-.268v2.293h-.929v-5.425h.93l.004.529c.169-.212.353-.368.55-.468.197-.1.426-.15.688-.147a1.509 1.509 0 0 1 1.156.507c.148.166.259.361.33.571.08.236.12.485.115.737m-4.21.89a.946.946 0 0 1-.102.441 1.007 1.007 0 0 1-.282.345c-.13.1-.275.173-.43.22a1.8 1.8 0 0 1-.546.08 1.985 1.985 0 0 1-.637-.097 1.964 1.964 0 0 1-.563-.32l.312-.505c.15.126.284.217.405.275.115.057.24.087.368.087a.557.557 0 0 0 .373-.12.396.396 0 0 0 .14-.322.475.475 0 0 0-.12-.318 1.306 1.306 0 0 0-.187-.173 9.231 9.231 0 0 0-.308-.232 6.787 6.787 0 0 1-.281-.21 2.11 2.11 0 0 1-.252-.232 1.039 1.039 0 0 1-.18-.275.826.826 0 0 1-.069-.347.893.893 0 0 1 .094-.409.935.935 0 0 1 .255-.314 1.22 1.22 0 0 1 .39-.203c.16-.05.327-.074.494-.072.184 0 .368.026.545.076.174.05.338.123.488.219l-.282.454a1.05 1.05 0 0 0-.608-.201.504.504 0 0 0-.323.102.307.307 0 0 0-.126.253c0 .098.041.193.113.26.074.078.203.186.385.325.185.136.336.253.457.355.104.085.202.182.286.286.065.08.115.173.145.273a.808.808 0 0 1 .046.299Z"/></svg>
+        </div>
+      </div>
+
+      <!-- AWS EC2 -->
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Tenho experiência no uso do Amazon EC2, um serviço de computação na nuvem que permite a criação e gerenciamento de instâncias de servidores virtuais. Utilizo o EC2 para configurar e dimensionar a infraestrutura de TI de acordo com as necessidades específicas dos projetos, garantindo flexibilidade e controle sobre o ambiente de computação. Além disso, sou capaz de otimizar o uso de recursos configurando regras de escalabilidade automática, balanceamento de carga, e definindo políticas de segurança com grupos de segurança e chaves SSH. O EC2 é fundamental para hospedar aplicativos e serviços com alto desempenho e disponibilidade na AWS.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="assets/EC2.svg" alt="AWS EC2" />
+        </div>
+      </div>
+
+      <!-- AWS VPC -->
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Tenho conhecimento no uso do AWS VPC para configurar e gerenciar redes privadas na nuvem da AWS. Utilizo o VPC para isolar recursos de forma segura, controlando o tráfego de entrada e saída através de regras de segurança e roteamento personalizado. Também sou capaz de configurar sub-redes, gateways de internet, NAT, e VPNs para garantir conectividade segura e eficiente. Com o VPC, garanto um ambiente de rede flexível e bem protegido, ajustado às necessidades específicas dos serviços e aplicativos em execução na nuvem.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="assets/Virtual Private Cloud.svg" alt="AWS VPC" />
+        </div>
+      </div>
+
+      <!-- AWS CLOUDWATCH -->
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Tenho conhecimento no uso do Amazon CloudWatch para monitorar e gerenciar a infraestrutura e aplicativos na nuvem da AWS. Utilizo o CloudWatch para coletar, visualizar e analisar métricas de desempenho de instâncias EC2, bancos de dados, contêineres e outros serviços, garantindo que o ambiente esteja sempre otimizado e funcionando dentro dos padrões esperados. Com a ferramenta, consigo configurar alarmes e notificações para eventos críticos, além de criar dashboards personalizados que facilitam o acompanhamento de métricas e logs em tempo real, ajudando na identificação rápida de problemas e na tomada de decisões informadas.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="assets/CloudWatch.svg" alt="Amazon CloudWatch" />
+        </div>
+      </div>
+
+      <!-- AWS KMS -->
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('
+
+        Tenho conhecimento no uso do AWS Key Management Service (KMS), uma ferramenta poderosa para gerenciar chaves de criptografia com segurança na AWS. Utilizo o KMS para criar e controlar chaves criptográficas usadas na proteção de dados sensíveis, garantindo conformidade com políticas de segurança e regulamentações. Além disso, sou capaz de integrar o KMS com outros serviços da AWS para proteger dados em repouso e em trânsito, configurar permissões detalhadas para chaves e implementar práticas de rotação automática de chaves, assegurando um nível elevado de segurança e controle dos dados.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="assets/Key Management Service.svg" alt="AWS KMS" />
+        </div>
+      </div>
+
+      <!-- AWS CloudTrail -->
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Tenho experiência no uso do AWS CloudTrail, uma ferramenta essencial para monitoramento e auditoria de atividades dentro do ambiente AWS. Utilizo o CloudTrail para registrar ações realizadas por usuários, serviços ou APIs, garantindo visibilidade total das alterações e acessos aos recursos da nuvem. Através dessa ferramenta, consigo acompanhar eventos em tempo real, investigar possíveis anomalias, implementar políticas de conformidade e manter a segurança das operações na nuvem, analisando logs detalhados e integrando-os com outros serviços AWS para automação e resposta a incidentes.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="assets/CloudTrail.svg" alt="AWS CloudTrail" />
+        </div>
+      </div>
+
+      <!-- Adicione outros skills de cibersegurança aqui -->
+    </div>
+  </div>
+
+  <!-- Ilustração da Seta Apontando para Baixo (Clique para rolar) -->
+  <div class="arrow-indicator" (click)="scrollToNextSection()">
+    <svg width="50" height="50" viewBox="0 0 24 24">
+      <path fill="#00bcd4" d="M12 16.5l-7-7h14l-7 7z" />
+    </svg>
+  </div>
+</section>
+
+<section id="programming-skills" class="skills-section">
+  <div class="container skills-container">
+    <!-- Descrição das Habilidades -->
+    <div class="skills-description">
+      <h3>Programação</h3>
+      <p>{{ skillDescription }}</p>
     </div>
 
-    <!-- Seção de Habilidades em Programação -->
-    <div class="skills-programming" data-aos="fade-left" data-aos-delay="200">
-      <h3>Habilidades em Programação</h3>
-      <div class="row align-items-center">
-        <!-- Card 1: Java/Spring -->
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <fa-icon [icon]="faJava"></fa-icon>
-            </div>
-            <h4>Java/Spring</h4>
-          </div>
+    <!-- Grid de Habilidades de Programação -->
+    <div class="skills-grid">
+      <!-- Java -->
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Tenho conhecimento no uso de Java para o desenvolvimento de aplicações robustas, escaláveis e seguras. Utilizo a linguagem para construir sistemas que podem ser executados em diversas plataformas, aproveitando sua característica de portabilidade com a JVM (Java Virtual Machine). Com Java, sou capaz de desenvolver desde aplicações desktop até servidores backend, utilizando bibliotecas e frameworks como Spring e Hibernate para facilitar a construção de sistemas eficientes. Além disso, trabalho com a orientação a objetos para organizar o código de maneira clara e modular, garantindo a manutenibilidade e a escalabilidade dos projetos.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
         </div>
-        <!-- Card 2: Docker -->
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <fa-icon [icon]="faDocker"></fa-icon>
-            </div>
-            <h4>Docker</h4>
-          </div>
+      </div>
+
+      <!-- Docker -->
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Tenho conhecimento no uso do Docker para criar, gerenciar e distribuir contêineres, facilitando o desenvolvimento e a implantação de aplicações em ambientes padronizados. Utilizo o Docker para garantir que os aplicativos funcionem de forma consistente em diferentes ambientes, isolando dependências e bibliotecas em contêineres leves. Com Docker, consigo configurar ambientes de desenvolvimento rapidamente, criar pipelines de CI/CD mais eficientes e simplificar o processo de escalabilidade das aplicações. Através de Docker Compose, também sou capaz de orquestrar múltiplos serviços, garantindo que o ambiente de desenvolvimento ou produção seja replicado de maneira fiel e previsível.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" />
         </div>
-        <!-- Card 3: SQL -->
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <fa-icon [icon]="faDatabase"></fa-icon>
-            </div>
-            <h4>SQL</h4>
-          </div>
+      </div>
+
+      <!-- GitHub -->
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Tenho experiência no uso do GitHub para controle de versão e colaboração em projetos de desenvolvimento de software. Utilizo o GitHub para gerenciar repositórios de código, controlar versões e garantir que as mudanças sejam registradas de forma organizada e rastreável. Também sou capaz de colaborar em equipe utilizando pull requests, issues e revisões de código, o que facilita o desenvolvimento colaborativo e a correção de bugs. Com GitHub Actions, automatizo fluxos de trabalho, como testes contínuos e deploys, melhorando a eficiência no ciclo de desenvolvimento. GitHub é uma ferramenta essencial para manter o código seguro, organizado e sempre disponível.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
         </div>
-        <!-- Card 4: Git -->
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <fa-icon [icon]="faGit"></fa-icon>
-            </div>
-            <h4>Git</h4>
-          </div>
+      </div>
+
+      <!-- Git -->
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Tenho conhecimento no uso de Git, uma ferramenta essencial para controle de versão no desenvolvimento de software. Utilizo Git para rastrear mudanças no código, criar ramificações (branches) e garantir que múltiplas versões de um projeto sejam gerenciadas de forma eficiente. Com Git, sou capaz de trabalhar em equipe, mesclando alterações de diferentes desenvolvedores de maneira organizada e resolvendo conflitos de forma rápida. Também uso comandos como commit, push, pull e merge para controlar o fluxo de desenvolvimento, garantindo que o código esteja sempre atualizado e facilmente restaurável em caso de problemas.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" />
         </div>
-        <!-- Card 5: GitHub -->
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <fa-icon [icon]="faGithub"></fa-icon>
-            </div>
-            <h4>GitHub</h4>
-          </div>
+      </div>
+
+      <!-- Spring Boot -->
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Tenho conhecimento no uso do Spring Framework para o desenvolvimento de aplicações Java robustas e escaláveis. Utilizo os diversos módulos do Spring, como Spring Boot, para acelerar a criação de aplicativos, facilitando a configuração e reduzindo a complexidade. Através do Spring Data, sou capaz de gerenciar o acesso a dados de maneira eficiente, enquanto o Spring Security é utilizado para implementar autenticação e autorização com segurança. O framework também permite a criação de APIs RESTful de forma ágil, garantindo a modularidade, a injeção de dependências e a facilidade de manutenção em projetos de qualquer escala.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
         </div>
-        <!-- Card 6: Angular -->
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <fa-icon [icon]="faAngular"></fa-icon>
-            </div>
-            <h4>Angular</h4>
-          </div>
+      </div>
+
+      <!-- Python -->
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Tenho conhecimento em Python, uma linguagem de programação versátil que utilizo para desenvolver uma ampla gama de aplicações, desde scripts simples até sistemas mais complexos. Com sua sintaxe clara e bibliotecas poderosas como NumPy, Pandas e Flask, sou capaz de trabalhar em projetos de análise de dados, automação, desenvolvimento web e machine learning. O ecossistema do Python, aliado à sua compatibilidade com diversas plataformas, me permite criar soluções rápidas e eficientes, focando sempre na legibilidade do código e na manutenção a longo prazo.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
+        </div>
+      </div>
+
+      <!-- Kafka -->
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Tenho conhecimento no uso do Apache Kafka para a construção de sistemas de processamento e streaming de dados em tempo real. Utilizo Kafka para criar pipelines de dados escaláveis e distribuir mensagens entre diferentes sistemas de forma eficiente e confiável. Com sua arquitetura distribuída, sou capaz de configurar produtores, consumidores e tópicos para processar grandes volumes de dados, garantindo alta disponibilidade e baixa latência. Kafka é uma ferramenta essencial em projetos que exigem processamento contínuo de eventos, como monitoramento de logs, integrações de sistemas e análise em tempo real.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original-wordmark.svg" />
+        </div>
+      </div>
+
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Tenho conhecimento no uso do RabbitMQ, uma plataforma de mensageria robusta, utilizada para o envio e recebimento de mensagens entre sistemas distribuídos de forma confiável. Com RabbitMQ, sou capaz de configurar filas, exchanges e roteamento de mensagens para garantir comunicação assíncrona entre microserviços, escalando a arquitetura conforme a necessidade. Utilizo a ferramenta para criar sistemas de filas de mensagens que permitem processamento eficiente, desacoplamento de componentes e maior tolerância a falhas, o que é fundamental em cenários de alta disponibilidade e integração de sistemas.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original-wordmark.svg" />
+        </div>
+      </div>
+
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Tenho conhecimento no uso do Angular, um framework poderoso para o desenvolvimento de aplicações web dinâmicas e responsivas. Utilizo Angular para criar interfaces de usuário interativas e bem estruturadas, aproveitando seus recursos de componentes reutilizáveis, data binding e injeção de dependências. Com o Angular CLI, sou capaz de configurar rapidamente novos projetos, gerenciar rotas e realizar integrações com APIs RESTful, garantindo uma experiência fluida e eficiente para o usuário final. Além disso, trabalho com serviços e diretivas para manter o código organizado e de fácil manutenção em projetos de qualquer escala.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" />
+        </div>
+      </div>
+
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Tenho conhecimento no uso do MySQL, um dos sistemas de gerenciamento de banco de dados mais populares e amplamente utilizados. Utilizo o MySQL para criar e administrar bancos de dados relacionais, garantindo a integridade e consistência dos dados. Com suas funcionalidades robustas de consulta SQL, sou capaz de realizar operações complexas de manipulação e recuperação de dados, otimizar consultas e criar índices para melhorar a performance. Também sou experiente na criação de relações entre tabelas, utilizando chaves primárias e estrangeiras para garantir a integridade referencial dos dados, e na configuração de backups para proteger as informações armazenadas.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+        </div>
+      </div>
+
+      <div
+        class="skill-card"
+        (mouseenter)="setSkillDescription('Tenho conhecimento no uso do PostgreSQL, um sistema de gerenciamento de banco de dados relacional poderoso e open-source. Utilizo o PostgreSQL para lidar com dados estruturados e semiestruturados, aproveitando suas características avançadas, como suporte a tipos de dados personalizados, transações ACID e conformidade com SQL padrão. Sou capaz de criar e gerenciar bancos de dados complexos, realizar consultas otimizadas, configurar chaves primárias e estrangeiras, além de garantir a integridade dos dados com triggers e constraints. Além disso, aproveito os recursos de extensões, como PostGIS, para expandir as funcionalidades e adaptar o banco de dados às necessidades específicas dos projetos.')"
+        (mouseleave)="resetSkillDescription()"
+      >
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
+        </div>
+        <div class="skills-grid">
+          <!-- Seus skill cards de programação -->
+          <!-- ... (mantenha seus skill cards existentes aqui) -->
         </div>
       </div>
     </div>

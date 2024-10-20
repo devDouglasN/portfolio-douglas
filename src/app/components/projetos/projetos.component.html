@@ -6,13 +6,14 @@
     <swiper-container
       #swiperContainer
       class="project_cards my-swiper my_swiper swiper-container-free-mode"
-      [slides-per-view]="3"
-      [space-between]="30"
-      navigation="true"
-      pagination="true"
-      loop="true"
+      [slidesPerView]="3"
+      [spaceBetween]="0"
+      [navigation]="true"
+      [pagination]="true"
+      [loop]="true"
       [autoplay]="{ delay: 2500, disableOnInteraction: false }"
-      keyboard="true"
+      [keyboard]="true"
+      [breakpoints]="breakpointsConfig"
       style="--swiper-navigation-color: #f3f3f3; --swiper-pagination-color: #D9A0BB"
     >
       <swiper-slide
@@ -29,7 +30,7 @@
             <div class="buttons-vista">
               <a [href]="projeto.link" target="_blank">
                 <button>
-                  <fa-icon class="button" [icon]="faGithub"></fa-icon>
+                  <fa-icon class="button" [icon]="faGithub"></fa-icon> Ver no GitHub
                 </button>
               </a>
             </div>

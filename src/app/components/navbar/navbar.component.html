@@ -34,13 +34,17 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/projetos">Projetos</a>
         </li>
-        <li class="nav-item">
+      <!--<li class="nav-item">
           <a class="nav-link" routerLink="/videos">Vídeos</a>
-        </li>
+        </li>*/ -->
         <li class="nav-item">
           <a class="nav-link" routerLink="/contato">Contato</a>
         </li>
       </ul>
+      <!-- Botão de alternância de tema -->
+      <button class="btn btn-theme-toggle" (click)="toggleTheme()">
+        <fa-icon [icon]="isDarkMode ? faSun : faMoon"></fa-icon>
+      </button>
     </div>
   </div>
 </nav>

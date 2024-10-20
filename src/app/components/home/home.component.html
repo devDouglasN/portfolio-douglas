@@ -1,17 +1,31 @@
+<!-- home.component.html -->
+
 <!-- Seção Home -->
 <section id="home" class="home vh-100">
-  <img src="./assets/cloud-sec.png" alt="Imagem de fundo" class="background-image">
-  <div class="overlay"></div>
-  <div class="home-container">
+  <div class="home-content">
     <div class="home-data">
       <h1 class="home-titulo">
-        <span #typeEffect class="cursor typed-text"></span>
+        Douglas Nascimento
       </h1>
       <h3 class="home-subtitulo">
         <span #typeEffect2></span>
       </h3>
+
+      <!-- Ícones de Redes Sociais -->
+      <div class="social-icons">
+        <a href="https://github.com/devDouglasN" target="_blank" aria-label="GitHub">
+          <fa-icon [icon]="faGithub"></fa-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/douglascloudsec/" target="_blank" aria-label="LinkedIn">
+          <fa-icon [icon]="faLinkedin"></fa-icon>
+        </a>
+        <a href="./assets/curriculo-atualizado2024.pdf" target="_blank" download aria-label="Currículo em PDF">
+          <fa-icon [icon]="faFilePdf"></fa-icon>
+        </a>
+      </div>
+    </div>
+    <div class="floating-image-container">
+      <img src="./assets/nuvem-sem-fundo.png" alt="Imagem flutuante" class="floating-image">
     </div>
   </div>
 </section>
-
-

@@ -1,121 +1,136 @@
 /* skills.component.css */
 
-/* Importação da fonte Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-/* Seção de Skills */
-.skills-section {
-  padding: 80px 0;
-  background-color: #f7f9fc;
+/* Estilos para o título "Habilidades" */
+.section-header {
+  text-align: center;
+  margin-bottom: 40px; /* Espaçamento abaixo do título */
 }
 
 .section-header h2 {
   font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 60px;
-  color: #333;
-}
-
-.skills-cloud, .skills-programming {
-  margin-bottom: 60px;
-}
-
-.skills-cloud h3, .skills-programming h3 {
-  font-size: 28px;
   font-weight: 600;
-  color: #0073bb; /* Azul AWS */
-  margin-bottom: 40px;
-  text-align: center;
+  color: #333;
+  position: relative;
+  display: inline-block;
 }
 
-/* Cards */
+.section-header h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #00bcd4; /* Cor verde ciano */
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Configuração geral */
+.skills-section {
+  padding: 80px 20px; /* Adicionei padding horizontal */
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.skills-subsection {
+  margin-bottom: 60px; /* Espaçamento entre as subseções */
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-description {
+  width: 40%;
+}
+
+.skills-description h3 {
+  font-size: 32px;
+  color: #00bcd4;
+}
+
+.skills-description p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 55%;
+}
+
 .skill-card {
-  background-color: #fff;
-  border-radius: 15px;
+  background-color: transparent;
   text-align: center;
-  padding: 30px 20px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s, border 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .skill-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
+  border: 2px solid #00bcd4;
 }
 
-.skill-icon {
-  margin-bottom: 20px;
-}
-
-.skill-icon img {
+.skill-icon img,
+.skill-icon svg {
   width: 60px;
   height: 60px;
   transition: transform 0.3s;
 }
 
-.skill-icon fa-icon {
-  font-size: 50px;
-  color: #ff9900; /* Laranja AWS */
-  transition: transform 0.3s;
-}
-
-.skill-icon fa-icon:hover,
-.skill-icon img:hover {
+.skill-card:hover .skill-icon img,
+.skill-card:hover .skill-icon svg {
   transform: scale(1.1);
 }
 
-.skill-card h4 {
-  font-size: 20px;
-  font-weight: 500;
-  color: #333;
+/* Ilustração da Seta Apontando para Baixo */
+.arrow-indicator {
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
-/* Ajustes para Ícones Font Awesome */
-.fa-icon {
-  font-size: 50px;
-  color: #ff9900;
+.arrow-indicator svg {
+  width: 50px;
+  height: 50px;
+  animation: bounce 1s infinite;
 }
 
-/* Responsividade */
-@media (max-width: 991px) {
-  .skills-cloud h3, .skills-programming h3 {
-    font-size: 24px;
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
   }
-
-  .skill-card {
-    padding: 20px 15px;
+ 50% {
+    transform: translateY(10px);
   }
-
-  .skill-card h4 {
-    font-size: 18px;
-  }
-
-  .skill-icon img,
-  .fa-icon {
-    width: 50px;
-    height: 50px;
-    font-size: 40px;
+ 100% {
+    transform: translateY(0);
   }
 }
 
-@media (max-width: 767px) {
-  .skills-cloud h3, .skills-programming h3 {
-    font-size: 22px;
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .skill-card h4 {
-    font-size: 16px;
+  .skills-description {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
   }
 
-  .skill-icon img,
-  .fa-icon {
-    width: 40px;
-    height: 40px;
-    font-size: 35px;
+  .skills-grid {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

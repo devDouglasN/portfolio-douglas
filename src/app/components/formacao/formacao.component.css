@@ -35,6 +35,7 @@ body {
   color: #fff;
   margin-bottom: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 15px; /* Adicionado para espaçamento entre os cards */
 }
 
 .card-bg {
@@ -76,6 +77,13 @@ body {
 
 .card:hover .card-bg {
   filter: brightness(0.9);
+}
+
+/* Centralizar os cards */
+.formacao-section .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 991px) {

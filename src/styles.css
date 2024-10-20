@@ -1,49 +1,72 @@
-@import 'swiper/swiper-bundle.css';
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Definição das cores para os temas */
+:root {
+  --background-color: #f0f0f0;
+  --text-color: #333;
+  --navbar-background: #fff;
+  --navbar-text-color: #333;
+  --link-hover-color: #08d9d6;
 }
 
+/* Tema escuro */
+body.dark-mode {
+  --background-color: #000;
+  --text-color: #fff;
+  --navbar-background: #000;
+  --navbar-text-color: #fff;
+  --link-hover-color: #08d9d6;
+}
+
+/* Tema claro (padrão) */
+body.light-mode {
+  --background-color: #f0f0f0;
+  --text-color: #333;
+  --navbar-background: #fff;
+  --navbar-text-color: #333;
+}
+
+/* Aplicação das cores no body */
 body {
-  font-family: 'Cairo', sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-/* Button Base Style */
-.btn {
-  font-size: 1em;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5em;
-  text-decoration: none;
+/* Estilos do Navbar */
+.navbar {
+  background-color: var(--navbar-background);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  color: var(--navbar-text-color);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--link-hover-color);
+}
+
+.navbar-nav .nav-link::after {
+  background-color: var(--link-hover-color);
+}
+
+/* Botão de alternância de tema */
+.btn-theme-toggle {
+  background: none;
   border: none;
+  color: var(--navbar-text-color);
+  font-size: 1.5rem;
   cursor: pointer;
+  margin-left: 1rem;
 }
 
-/* Link Styles */
+.btn-theme-toggle:focus {
+  outline: none;
+}
+
+/* Outros estilos que usam as variáveis */
 a {
-  color: inherit;
-  text-decoration: none;
+  color: var(--text-color);
 }
 
 a:hover {
-  text-decoration: underline;
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.main-content {
-  flex: 1;
-  padding-bottom: [altura do footer]; /* Ex: 60px */
+  color: var(--link-hover-color);
 }
