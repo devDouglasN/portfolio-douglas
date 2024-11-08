@@ -1,0 +1,21 @@
+<div class="splunk-lab-container">
+  <div *ngFor="let step of steps; let i = index" class="step">
+    <div #stepRef [ngClass]="{'step-content': true, 'reverse': i % 2 !== 0}">
+      <div class="image">
+        <div class="image-container">
+          <button *ngIf="step.images.length > 1" class="nav-button prev-button" (click)="prevImage(i)">
+            &lt;
+          </button>
+          <img [src]="step.images[step.currentImageIndex]" [alt]="step.title">
+          <button *ngIf="step.images.length > 1" class="nav-button next-button" (click)="nextImage(i)">
+            &gt;
+          </button>
+        </div>
+      </div>
+      <div class="text">
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.text }}</p>
+      </div>
+    </div>
+  </div>
+</div>

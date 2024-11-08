@@ -1,0 +1,119 @@
+.splunk-lab-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.step {
+  margin-bottom: 80px;
+}
+
+.step-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.7s ease-out;
+}
+
+.step-content.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.step-content.reverse {
+  flex-direction: row-reverse;
+}
+
+.image {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.image img:hover {
+  transform: scale(1.05);
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5em;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.nav-button:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  flex: 1;
+  padding: 20px;
+}
+
+.text h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.text p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #555;
+  white-space: pre-line;
+}
+
+@media (max-width: 768px) {
+  .step-content,
+  .step-content.reverse {
+    flex-direction: column;
+  }
+
+  .nav-button {
+    top: auto;
+    bottom: 10px;
+    transform: none;
+    padding: 5px;
+  }
+
+  .prev-button {
+    left: 50%;
+    transform: translateX(-100%);
+  }
+
+  .next-button {
+    right: 50%;
+    transform: translateX(100%);
+  }
+}
