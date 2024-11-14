@@ -55,7 +55,14 @@ export class ProjectsCyberComponent implements OnInit, AfterViewInit {
       },
     {
       images: [
-        'assets/imagem4.jpg'
+        'assets/baixando iso do linux ubuntu.png',
+        'assets/baixando a iso do linux.png',
+        'assets/criando maquina linux.png',
+        'assets/linux-instalado.png',
+        'assets/sistema linux atualizado.png',
+        'assets/instalacao do splunk enterprise bem sucedida.png',
+        'assets/Splunk foi iniciado com sucesso.png',
+        'assets/Splunk enterprise instalado no linux com sucesso.png',
       ],
       currentImageIndex: 0,
       title: '4º passo: Centralizando a Análise e Monitoramento de Dados com Splunk Enterprise em Ambiente Linux',
