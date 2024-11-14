@@ -1,42 +1,29 @@
 <section id="projetos" class="projetos section">
   <div data-aos="zoom-in-up" class="d-flex justify-content-center">
-    <h2 class="h2 titulo-section move-up">Meus projetos</h2>
+    <h2 class="h2 titulo-section move-up">Meus Projetos</h2>
   </div>
   <div data-aos="fade-up-left" class="projetos-cards-container">
-    <swiper-container
-      #swiperContainer
-      class="project_cards my-swiper my_swiper swiper-container-free-mode"
-      [slidesPerView]="3"
-      [spaceBetween]="0"
-      [navigation]="true"
-      [pagination]="true"
-      [loop]="true"
-      [autoplay]="{ delay: 2500, disableOnInteraction: false }"
-      [keyboard]="true"
-      [breakpoints]="breakpointsConfig"
-      style="--swiper-navigation-color: #f3f3f3; --swiper-pagination-color: #D9A0BB"
-    >
-      <swiper-slide
+    <div class="grid-container">
+      <div
         *ngFor="let projeto of projetos; let i = index"
+        class="projeto-card"
         [attr.data-aos]="'fade-down'"
         [attr.data-aos-delay]="(i + 1) * 100"
       >
-        <div class="projeto-card">
-          <div class="projeto-header" id="projeto-header">
-            <img [src]="projeto.imagem" alt="Imagem do projeto">
+        <div class="projeto-header">
+          <img [src]="projeto.imagem" [alt]="projeto.titulo">
+        </div>
+        <div class="projeto-conteudo">
+          <div class="buttons-vista">
+            <a [href]="projeto.link" target="_blank">
+              <fa-icon class="github-icon" [icon]="faGithub"></fa-icon>
+            </a>
           </div>
-          <div class="projeto-conteudo">
+          <div class="projeto-descricao">
             <p>{{ projeto.descricao }}</p>
-            <div class="buttons-vista">
-              <a [href]="projeto.link" target="_blank">
-                <button>
-                  <fa-icon class="button" [icon]="faGithub"></fa-icon> Ver no GitHub
-                </button>
-              </a>
-            </div>
           </div>
         </div>
-      </swiper-slide>
-    </swiper-container>
+      </div>
+    </div>
   </div>
 </section>

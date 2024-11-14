@@ -14,7 +14,7 @@
       </div>
       <div class="text">
         <h3>{{ step.title }}</h3>
-        <p>{{ step.text }}</p>
+        <p [innerHTML]="step.text"></p> <!-- Aqui usamos [innerHTML] para renderizar o HTML -->
       </div>
     </div>
   </div>

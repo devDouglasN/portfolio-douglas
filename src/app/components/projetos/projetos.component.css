@@ -1,46 +1,40 @@
-/* Container dos cards */
+/* Container dos projetos */
 .projetos-cards-container {
   background-color: #2D2D2D;
-  overflow: hidden;
-  width: 100%;
-  padding: 1em 0; /* Ajustamos o padding vertical */
+  padding: 2em;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Estilos para o Swiper */
-.my_swiper {
-  padding: 0;
-  margin: 0;
+/* Grade de projetos */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-gap: 2em;
+  align-items: start;
 }
 
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
+/* Card do projeto */
 .projeto-card {
-  margin: 0;
-  padding: 0;
-  width: 300px; /* Largura fixa */
-  max-width: none;
-  border-radius: 15px;
   background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
   overflow: hidden;
   color: #333;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  height: auto; /* Permitir altura dinâmica */
+  transition: transform 0.3s, box-shadow 0.3s, height 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+  position: relative;
 }
 
 .projeto-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+  height: auto;
 }
 
+/* Imagem do projeto */
 .projeto-header {
   height: 160px;
   overflow: hidden;
@@ -51,107 +45,57 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  transition: transform 0.5s;
+  transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .projeto-card:hover .projeto-header img {
   transform: scale(1.1);
 }
 
+/* Conteúdo do projeto */
 .projeto-conteudo {
-  padding: 20px;
-  height: auto; /* Permitir altura dinâmica */
+  padding: 10px;
 }
 
-.projeto-conteudo p {
-  font-size: 1em;
-  margin-bottom: 1.5em;
-  line-height: 1.6;
-}
-
+/* Ícone do GitHub */
 .buttons-vista {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.buttons-vista a {
-  text-decoration: none;
-}
-
-.buttons-vista button {
-  background-color: #08d9d6;
-  border: none;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 50px;
+.github-icon {
+  font-size: 2em;
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
   cursor: pointer;
-  font-size: 1em;
-  transition: background-color 0.3s, transform 0.3s;
 }
 
-.buttons-vista button:hover {
-  background-color: #06b1c1;
-  transform: translateY(-5px);
+.github-icon:hover {
+  color: #08d9d6;
+  transform: scale(1.1);
 }
 
-.buttons-vista button:active {
-  transform: translateY(0);
+/* Descrição do projeto */
+.projeto-descricao {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* Botões de navegação do Swiper */
-.swiper-button-next,
-.swiper-button-prev {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  transition: background-color 0.3s;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background-color: #08d9d6;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 20px;
-}
-
-.swiper-button-next {
-  right: 10px;
-}
-
-.swiper-button-prev {
-  left: 10px;
-}
-
-/* Paginação do Swiper */
-.swiper-pagination-bullet {
-  background: #fff;
-  opacity: 0.6;
-  transition: opacity 0.3s, background 0.3s;
-}
-
-.swiper-pagination-bullet-active {
-  background: #08d9d6;
-  opacity: 1;
-}
-
-.swiper-pagination-bullet:hover {
-  opacity: 1;
+.projeto-card:hover .projeto-descricao {
+  max-height: 200px;
 }
 
 /* Responsividade */
-@media (max-width: 930px) {
-  .swiper-slide {
-    max-width: 50%;
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 }
 
-@media (max-width: 640px) {
-  .swiper-slide {
-    max-width: 100%;
+@media (max-width: 480px) {
+  .projeto-header {
+    height: 140px;
   }
 }
