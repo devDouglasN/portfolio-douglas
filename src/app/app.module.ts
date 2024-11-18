@@ -15,6 +15,8 @@ import { ProjetosComponent } from './components/projetos/projetos.component';
 import { VideosComponent } from './components/videos/videos.component';
 import { CertificateComponent } from './components/certificate/certificate.component';
 import { ProjectsCyberComponent } from './components/projects-cyber/projects-cyber.component';
+import { AwsProjectComponent } from './aws-project/aws-project.component';
+import { CyberCatalogComponent } from './components/cyber-catalog/cyber-catalog.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { ProjectsCyberComponent } from './components/projects-cyber/projects-cyb
     ProjetosComponent,
     VideosComponent,
     CertificateComponent,
-    ProjectsCyberComponent
+    ProjectsCyberComponent,
+    AwsProjectComponent,
+    CyberCatalogComponent
   ],
   imports: [
     BrowserModule,
