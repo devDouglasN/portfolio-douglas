@@ -141,8 +141,8 @@ export class ProjectsCyberComponent implements OnInit, AfterViewInit {
         'assets/enterprise-baixado.png',
       ],
       currentImageIndex: 0,
-      title: 'Imagem 6: Configuração do Splunk Enterprise em Ambiente Windows',
-      text: `<strong>6º Passo: Configuração do Splunk Enterprise em Ambiente Windows</strong>
+      title: '6º Passo: Configuração do Splunk Enterprise em Ambiente Windows',
+      text: `<strong> Configuração do Splunk Enterprise em Ambiente Windows</strong>
                     Neste passo, instalei o <strong>Splunk Enterprise</strong> em uma <strong>máquina virtual rodando Windows</strong>, complementando o ambiente de monitoramento distribuído já configurado anteriormente. A escolha do Windows como sistema operacional para o Splunk demonstra a flexibilidade da ferramenta em suportar diferentes plataformas, permitindo a centralização de logs e dados de sistemas Windows e Linux em um único ambiente.
     
                     1. <strong>Preparação da Máquina Windows</strong>
@@ -193,11 +193,81 @@ export class ProjectsCyberComponent implements OnInit, AfterViewInit {
     },
     {
       images: [
-        'assets/imagem7.jpg'
+        'assets/habilitar o indexador (Splunk Enterprise) para receber dados na porta 9997.png',
+        'assets/indo para o firewall.png',
+        'assets/regras de entrada, entrando.png',
+        'assets/regras de entrada, configurando.png',
+        'assets/regras de entrada, configurandoo.png',
+        'assets/dando nome.png',
+        'assets/reiniciando o splunk.png',
+        'assets/baixando o universal forwarder.png',
+        'assets/baixando o universal forwarderr.png',
+        'assets/logs do sistema.png',
       ],
       currentImageIndex: 0,
-      title: 'Imagem 7: Carregamento e Monitoramento de Dados no Splunk',
-      text: `Nesta fase, iniciei o processo de <strong>carregamento e monitoramento de dados</strong>. O Splunk permite que eu suba arquivos de dados e configure inputs de diferentes fontes, possibilitando uma visão holística dos dados de entrada. Esse monitoramento constante é essencial para garantir que todas as informações coletadas sejam indexadas e prontas para análise. Dessa forma, asseguro que o laboratório esteja recebendo e processando dados de maneira confiável e contínua.`
+      title: '7º passo: Carregamento e Monitoramento de Dados no Splunk',
+      text: `<strong>7º Passo: Configuração do Splunk Universal Forwarder em Ambiente Windows</strong>
+                    Neste passo, instalei o <strong>Splunk Universal Forwarder</strong> em uma <strong>máquina virtual rodando Windows</strong>, configurando-o para enviar logs de eventos do sistema para o Splunk Enterprise. Essa configuração complementa o ambiente híbrido, unindo sistemas Windows e Linux em uma solução centralizada para coleta e análise de dados.
+
+                    1. <strong>Preparação da Máquina Windows</strong>
+                    <strong>Configuração da Máquina Virtual (VM):</strong>
+    
+                    Usei o <strong>VirtualBox</strong> para criar a VM com Windows.
+                    Configurei os recursos de hardware, como memória RAM e disco, para garantir compatibilidade com o Splunk.
+                    
+                    <strong>Abertura da Porta 9997 no Firewall:</strong>
+    
+                    - Acesse o <strong>Windows Defender Firewall</strong> e configurei uma nova regra de entrada:
+                    - Selecionei a opção <strong>Porta</strong> e defini o protocolo como <strong>TCP</strong>.
+                    - Especifiquei a porta local <strong>9997</strong>, permiti a conexão em todos os perfis e finalizei a regra.
+
+                    2. <strong>Download e Instalação do Splunk Universal Forwarder</strong>
+                    <strong>Download do Instalador:</strong>
+    
+                    Acessei o site oficial da Splunk, fiz login e baixei o instalador do Universal Forwarder para Windows.
+                    
+                    <strong>Execução do Instalador:</strong>
+    
+                    - Executei o arquivo <code>.msi</code> baixado.
+                    - Aceitei os termos de licença e selecionei "An on-premises Splunk Enterprise instance".
+                    - Na tela de instalação, configurei o serviço como <strong>Local System</strong> e habilitei o monitoramento de logs do sistema Windows.
+
+                    <strong>Configuração de Credenciais:</strong>
+    
+                    Durante a instalação, criei o nome de usuário e senha para o Splunk Universal Forwarder.
+
+                    <strong>Configuração do Destino de Logs:</strong>
+    
+                    Digitei o endereço IP do Splunk Enterprise (<strong>10.0.2.15</strong>) e a porta <strong>9997</strong> como destino dos logs coletados.
+
+                    3. <strong>Inicialização e Validação</strong>
+                    <strong>Início do Serviço Splunk:</strong>
+    
+                    Após a instalação, o Splunk Universal Forwarder iniciou automaticamente.
+
+                    <strong>Validação no Splunk Enterprise:</strong>
+    
+                    No Splunk Enterprise, acessei a interface web e verifiquei que os dados estavam sendo recebidos:
+    
+                    <pre><code>http://10.0.2.15:8000</code></pre>
+    
+                    Consultei os eventos no índice interno com o comando:
+                    <pre><code>index=_internal</code></pre>
+    
+                    Validei que os eventos do sistema Windows estavam sendo coletados corretamente.
+
+                    <strong>Objetivo Desse Módulo</strong>
+                    <strong>Monitorar Logs do Windows:</strong>
+                    Coletar logs de eventos do sistema Windows (por exemplo, falhas de aplicativos, eventos de segurança).
+                    
+                    <strong>Centralizar Dados no Indexador:</strong>
+                    Todos os logs são enviados para o Splunk Enterprise, permitindo análises centralizadas.
+                    
+                    <strong>Garantir Monitoramento em Tempo Real:</strong>
+                    O Forwarder envia logs em tempo real, ajudando na detecção de problemas ou ameaças.
+                    
+                    <strong>Resultado:</strong>
+                    Com essa configuração, o ambiente está totalmente funcional para monitorar logs do Windows e integrá-los a uma solução centralizada que inclui dados de diferentes plataformas, garantindo visibilidade e controle total.`
     },
     {
       images: [
